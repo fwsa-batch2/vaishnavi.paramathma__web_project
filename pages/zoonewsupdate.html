@@ -62,12 +62,6 @@
             display: flex;
         }
 
-        .bottom img {
-            margin-top: 30px;
-            margin-left: 30px;
-
-        }
-
         .table input[type=email] {
             width: 500px;
             height: 40px;
@@ -172,29 +166,29 @@
             <h1>Register</h1>
 
             <div>
-                <input type="name" placeholder="First name " id="fname">
+                <input type="name" placeholder="First name " id="fname" required>
             </div>
 
 
             <div>
-                <input type="text" placeholder="Last name" id="sname">
+                <input type="text" placeholder="Last name" id="sname" required>
             </div>
 
             <div>
-                <input type="email" placeholder="email address" id="mail">
+                <input type="email" placeholder="email address" id="mail" required>
             </div>
 
 
             <div>
-                <input type="date" placeholder="Date of birth" id="dob">
+                <input type="date" placeholder="Date of birth" id="dob" min="1900-01-01" max="2021-12-13" required>
             </div>
 
             <div>
-                <input type="password" placeholder="Create  your password" id="createpassword" minlength="6">
+                <input type="password" placeholder="Create  your password" pattern="[a-zA-Z0-9].{6,25}" id="createpassword"  required>
             </div>
 
             <div>
-                <input type="password" placeholder="Confirm your password" id="confirmpassword">
+                <input type="password" placeholder="Confirm your password" id="confirmpassword" required>
             </div>
 
             <div id="error">
