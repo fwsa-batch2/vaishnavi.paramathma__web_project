@@ -38,7 +38,7 @@ function submitFunction() {
         data.push(userdetails) // obj
      const customerlist = JSON.stringify(data);
      localStorage.setItem("userdetails",customerlist );
-     window.location.href="./pages/login.html"
+     window.location.href="./../pages/login.html"
     } 
 }
     function isEmailAlreadyExist(currentemail){
