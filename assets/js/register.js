@@ -7,7 +7,10 @@ function onPageLoad(){
 }
 onPageLoad();
 function submitFunction() {
+   
     event.preventDefault();
+    console.group("submitfunction")
+    console.log("show group end")
     let firstname = document.getElementById("fname").value;
     let secondname = document.getElementById("sname").value;
     let email = document.getElementById("mail").value;
@@ -38,7 +41,9 @@ function submitFunction() {
         data.push(userdetails) // obj
      const customerlist = JSON.stringify(data);
      localStorage.setItem("userdetails",customerlist );
-     window.location.href="./../pages/login.html"
+     console.groupEnd("submitfunction");
+    //  window.location.href="./../pages/login.html"
+     
     } 
 }
     function isEmailAlreadyExist(currentemail){
@@ -50,6 +55,7 @@ function submitFunction() {
             break;
           }
       }
+
       return used;
 
     }

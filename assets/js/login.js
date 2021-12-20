@@ -7,11 +7,11 @@ function submithandler() {
     console.log(emailid);
     console.log(password);
     let currentuser = JSON.parse(localStorage.getItem("userdetails"));
-let detaillist = currentuser.length;
+
 
 let userexist = false;
 
-for(i=0; i<detaillist; i++){
+for(i=0; i<currentuser.length; i++){
     let useremail = currentuser[i].email;
     let userpassword = currentuser[i].password;
  

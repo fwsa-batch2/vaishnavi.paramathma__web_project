@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy tickets</title>
+    <style>
+        .a1 {
+            position: static;
+            height: 150px;
+            border: 3px;
+            background-color: #5499C7;
+            font-size: 50px;
+            color: white;
+        }
+
+        .a2 {
+            height: 80px;
+            /* border: 3px; */
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
+        nav {
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            font-family: cursive;
+            border-spacing: 20px;
+            margin-left: 10px;
+        }
+
+        .a1 img {
+            margin-top: 40px;
+            margin-left: 240px;
+        }
+
+        /* section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #161623;
+            overflow: hidden;
+
+        }
+        section::before{
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(#d53369,#cbad6d);
+            border-radius: 50%;
+            transform: translate(-250px ,-120px);
+        }
+        section::after{
+            content: '';
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(#f857a6,#ff5858);
+            border-radius: 50%;
+            transform: translate(250px, 120px); 
+        }
+        .box{
+            position: relative;
+            z-index: 1000;
+        }
+        .container{
+            position: relative;
+            width: 400px;
+            min-height: 400px;
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-right: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(25px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+#cal-container{
+   width:300px;
+   height:300px;
+   border:1px solid black;
+   margin:150px 300px;
+}
+#cal-header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    font-size: 18px;
+}
+p{
+   display: inline; 
+}
+    </style>
+</head>
+
+<body class="light">
+    <div class="a1">
+        <img src="./../assets/img/zoologo.png" width="150" height="150">
+    </div>
+    <div class="a2">
+        <center>
+            <nav>
+                &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+                &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+            </nav>
+        </center>
+    </div>
+    <center>
+        <h1>
+            THINGS TO KNOW BEFORE YOU BOOK:
+        </h1>
+
+        Due to Covid-19 we are limiting the number of visitors that will be in the zoo each day. This means you'll<br>
+        need to <b>BOOK ONLINE </b>- even if you have an Annual Pass or pre-paid ticket.<br><br>
+
+        Tickets and timeslots are now available up until Sunday 9th January 2022. Please note all admission<br>
+        tickets are non-refundable.<br><br>
+
+        Available dates are in green, you CANNOT book onto greyed out dates as these tickets have not been<br>
+        released yet.<br><br>
+
+        Entry is permitted in 1 hour time slots - this refers to your arrival time only, not the length of your
+        visit.<br><br>
+
+        Please note: due to the latest government restrictions face masks are now mandatory in all indoor
+        spaces.<br><br>
+
+        Whilst we've made every effort to safely reopen all areas of the zoo, some exhibits may remain closed.<br>
+        For a full list of what exhibits are available, please visit the Updates page of our website.<br><br>
+
+        Due to the growing number of Avian Flu cases in the UK, from Monday 29th November 2021 we are <br>
+        required by law to implement footbaths outside the following bird enclosures: Brookside Aviary &<br>
+        Tropical Trails/Arid Lands. All visitors will be required to use these upon entering and exiting these<br>
+        areas. We apologise for any inconvenience caused however this is a vital measure we must take to<br>
+        protect our bird species.<br><br>
+
+        <b>UNDER 3's, CARERS AND STUDENTS:</b><br><br>
+
+        Children under 3 and Carers must book onto a time slot, to book in as a Carer you must select an Under<br>
+        3 ticket. Students must bring a valid student card with expiry date on the day of visit.<br><br>
+
+        <b>OTHER TICKETS:</b><br><br>
+
+        If you have a Welcome Return, complimentary or pre-paid ticket please call our Reception team on<br>
+        01803 697500 to book a time slot.<br><br>
+
+        Don't forget...staying safe is everyone's responsibility; for full details on the measures we've taken to<br>
+        ensure you have a safe and happy visit, take a look at our Staying safe at the Zoo webpage.<br><br>
+        <!-- <section>
+            <div class="box">
+                <div class="container"></div>
+            </div>
+        </section> -->
+        <div id="cal-container">
+            <div id="cal-header">
+                <div>
+                    <i><</i>
+             <p id="month"></p>
+             <i>></i>
+                </div>
+                <div>
+                    <i><</i>
+             <p id="year"></p>
+             <i>></i>
+            </div>
+            </div>
+            <div id ="days-container">
+                <div id="0" class="day-column"></div>
+                <div id="1" class="day-column"></div>
+                <div id="2" class="day-column"></div>
+                <div id="3" class="day-column"></div>
+                <div id="4" class="day-column"></div>
+                <div id="5" class="day-column"></div>
+                <div id="6" class="day-column"></div>
+
+                
+            </div>
+        </div>
+    </center>
+    <script src="./../assets/js/calender.js"></script>
+</body>
+
+</html>

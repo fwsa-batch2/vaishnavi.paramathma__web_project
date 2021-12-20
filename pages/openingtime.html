@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +37,7 @@
             margin-top: 40px;
             margin-left: 240px;
         }
+
         .a3 {
             height: 80px;
             background-color: #0fb158;
@@ -43,33 +45,63 @@
             font-style: italic;
             font-weight: bold;
             color: white;
+            text-align: center;
         }
-        .image {
-            margin-left: 1200px;
-            margin-top: 100px;
-        }
-        .a4 {
-            font-size: 50px;
-            color: #044068;
-            font-style: oblique; 
-            margin-left: 450px;
-            width: 700px;
-            height: 200px;
-            border-radius: 25px;
-            position: relative;
-            margin-top: 40px;
-        }
-        .a4 h2{
-            font-size: 27px;
 
+        .a4 {
+            color: #044068;
+            font-style: oblique;
+            position: relative;
+            width: 50%;
+            height: auto;
+            left: 0;
+            padding-left: 100px;
         }
-        .a5{
+
+        .a4 h2 {
+            font-size: 50px;
+            font-weight: 1000;
+        }
+
+        .a4 p {
+            font-size: 30px;
+        }
+
+        .a5 {
             width: 90px;
             height: 30px;
             background-color: violet;
         }
+
+        .a4+p {
+            background-color: #0fb158;
+
+        }
+
+        .container {
+            left: 0;
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+
+        .container .image {
+            padding: 30px;
+        }
+
+        .a5 {
+            background-color: #e7098b;
+            width: 1820px;
+            height: 120px;
+        }
+        .a5 h1{
+            font-size: 35px;
+            color: white;
+            margin-left: 200px;
+        }
     </style>
 </head>
+
 <body>
     <div class="a1">
         <img src="./../assets/img/zoologo.png" width="150" height="150">
@@ -83,25 +115,37 @@
         </center>
     </div>
     <img src="./../assets/img/openingtimehomepagee.jpg" width="1818" height="570">
+
+
+
     <div class="a3">
-        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Opening time
+        Opening time
+    </div>
+
+
+    <div class="container">
+        <div class="a4">
+            <h2>
+                Paignton Zoo is open to <br>guests from 10am every day <br>(apart from Christmas Day).</h2>
+
+            <p> Please see our Zoo Updates page for all the latest information prior to your zoo visit.
+                Closing times vary according to season and Paignton Zoo management reserve the right to close
+                all or parts of Paignton Zoo as required.</p>
+        </div>
+
         <div class="image">
             <img src="./../assets/img/findus.jpg" width="400" height="420">
         </div>
-    </div>
-    <div class="a4">
-        Paignton Zoo is open to guests from 10am every day (apart from Christmas Day).
-        <h2>
-            Please see our Zoo Updates page for all the latest information prior to your zoo visit.
-<br><br>Closing times vary according to season and Paignton Zoo management reserve the right to close all or parts of Paignton Zoo as required.
 
 
-        </h2>
+
     </div>
-<p>
-    ewhdeo;jig3wj3prij'afnvahwkehfasdjnjal
-</p>
+    <div class="a5">
+        <h1>
+            To ensure that you are able to visit Paignton Zoo on your preferred date and time, we suggest
+            <br> booking your tickets in advance. Annual Pass Holders may check in using Gate 5.
+        </h1>
+    </div>
 </body>
+
 </html>
