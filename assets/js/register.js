@@ -9,8 +9,7 @@ onPageLoad();
 function submitFunction() {
    
     event.preventDefault();
-    console.group("submitfunction")
-    console.log("show group end")
+    
     let firstname = document.getElementById("fname").value;
     let secondname = document.getElementById("sname").value;
     let email = document.getElementById("mail").value;
@@ -36,13 +35,12 @@ function submitFunction() {
             "email": email,
             "dob": dateofbirth,
             "password": password,
-            "confirmPassword": confirmpassword
+            "confirmPassword": confirmpassword,
         }
         data.push(userdetails) // obj
      const customerlist = JSON.stringify(data);
      localStorage.setItem("userdetails",customerlist );
-     console.groupEnd("submitfunction");
-    //  window.location.href="./../pages/login.html"
+      window.location.href="./../pages/login.html"
      
     } 
 }

@@ -166,16 +166,16 @@
             <h1>Register</h1>
 
             <div>
-                <input type="text" placeholder="First name " id="fname"  required>
+                <input type="text" placeholder="First name " id="fname" pattern="[a-zA-Z].{3,20}"  required>
             </div>
 
 
             <div>
-                <input type="text" placeholder="Last name" id="sname"  required>
+                <input type="text" placeholder="Last name" id="sname" pattern="[a-zA-Z].{3,20}" required>
             </div>
 
             <div>
-                <input type="email" placeholder="email address" id="mail" required>
+                <input type="email" placeholder="email address" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  required>
             </div>
 
 
@@ -188,7 +188,7 @@
             </div>
 
             <div>
-                <input type="password" placeholder="Confirm your password" id="confirmpassword" required>
+                <input type="password" placeholder="Confirm your password" pattern="[a-zA-Z0-9].{6,25}" id="confirmpassword" required>
             </div>
 
             <div id="error">
