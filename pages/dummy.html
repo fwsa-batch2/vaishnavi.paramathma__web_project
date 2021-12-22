@@ -109,20 +109,20 @@
         crossorigin="anonymous"></script>
 
 <script>
-    today = new Date();
-currentMonth = today.getMonth();
-currentYear = today.getFullYear();
+  let  today = new Date();//21/12/2021 11.30 am ist
+ let currentMonth = today.getMonth();
+ let currentYear = today.getFullYear();
 selectYear = document.getElementById("year");
 selectMonth = document.getElementById("month");
 
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-monthAndYear = document.getElementById("monthAndYear");
+ let monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
 
 function next() {
-    currentYear = (currentMonth == 11) ? currentYear - 1 : currentYear;
+    currentYear = (currentMonth == 11) ? currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
     showCalendar(currentMonth, currentYear);
 }
@@ -132,7 +132,7 @@ function previous() {
     currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
     showCalendar(currentMonth, currentYear);
 }
-
+       
 function jump() {
     currentYear = parseInt(selectYear.value);
     currentMonth = parseInt(selectMonth.value);
@@ -145,7 +145,7 @@ function showCalendar(month, year) {
     tbl = document.getElementById("calendar-body"); // body of the calendar
 
     // clearing all previous cells
-    tbl.innerHTML = "";
+    tbl.innerHTML = "";               
 
     // filing data about month and in the page via DOM.
     monthAndYear.innerHTML = months[month] + " " + year;
