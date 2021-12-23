@@ -33,6 +33,7 @@
             font-family: cursive;
             border-spacing: 20px;
             margin-left: 10px;
+            text-align: center;
         }
 
         .a1 img {
@@ -40,43 +41,88 @@
             margin-left: 240px;
         }
 
+        .extradetails {
+            width: 400px;
+            height: 700px;
+            background-color: #044068;
+            margin-left: 200px;
+            position: absolute;
+        }
+
+        .extradetails h2 {
+            padding-left: 20px;
+            font-size: 20px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        .extradetails h1 {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .sidebar {
+            margin-left: 700px;
+        }
+
+        .sidebar h1 {
+            font-size: 50px;
+            color: #044068;
+        }
+        .animalwitha {
+            margin-top: 100px;
+            margin-left: 700px;
+        }
         h1 {
             font-size: 50px;
             color: #044068;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
-        .ticket{
+
+        .ticket {
             position: relative;
             bottom: 300px;
             font-size: 50px;
             color: #044068;
+            text-align: center;
         }
-        .openingtime{
+
+        .openingtime {
             position: relative;
             bottom: 300px;
             font-size: 50px;
             color: #044068;
+            text-align: center;
         }
-        .accessibility{
+
+        .accessibility {
             position: relative;
             bottom: 300px;
             font-size: 50px;
             color: #044068;
+            text-align: center;
         }
-        .findus{
+
+        .findus {
             position: relative;
             bottom: 300px;
             font-size: 50px;
-            color: #044068; 
+            color: #044068;
+            text-align: center;
         }
-        .faqs{
+
+        .faqs {
             position: relative;
             bottom: 300px;
             font-size: 50px;
-            color: #044068;  
+            color: #044068;
+            text-align: center;
         }
+
         .bottom {
             position: relative;
             height: 220px;
@@ -91,13 +137,15 @@
             margin-top: 30px;
             margin-left: 30px;
 
-        } 
+        }
+
         .font {
             position: absolute;
             margin-left: 400px;
             font-size: 30px;
             margin-top: 45px;
-        } 
+        }
+
         .button2 {
             background-color: #07dee6;
             color: black;
@@ -111,69 +159,92 @@
             margin-left: 200px;
             margin-top: 100px;
         }
-        
-
     </style>
 </head>
 
 <body>
     <div class="a1">
-        <img src="../assets/img/zoologo.png" width="150" height="150">
+        <img src="./../assets/img/zoologo.png" width="150" height="150">
     </div>
     <div class="a2">
-        <center>
-            <nav>
-                &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
-                &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
-            </nav>
-        </center>
-    </div>
-    <center>
-        <h1>
-            Your visit to Paignton Zoo starts right here!
-        </h1>
-        <p>We’re an education and conservation charity, and by visiting us you’re helping to save endangered<br>
-            animals both in the UK and across the globe. Our mission is to conserve species and their habitats,<br>
-            and to inspire everyone to help in the fight to protect wildlife.With over 2,500 different animals <br>
-            set in naturalistic indoor and outdoor exhibits, plus adventure play areas and a peaceful nature<br>
-            trail, there’s plenty for all ages to discover and explore.<br><br>
 
-            We recommend at least 3 to 4 hours for a visit to Paignton Zoo, but it would be best to leave a full<br> day to
-            explore everything that we have to offer.
+        <nav>
+            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+        </nav>
 
-            Your adventure starts here.</p>
-        <img src="./../assets/img/ticketprices .jpg" width="900" height="400">
-        <h2 class="ticket">
-            Ticket prices
-        </h2>
-        <img src="./../assets/img/openingtime.jpg" width="900" height="400">
-        <h2 class="openingtime">
-           Opening time 
-        </h2>
-        <img src="./../assets/img/accessibility.jpg" width="900" height="400">
-        <h2 class="accessibility">
-            Accessibility
-        </h2>
-        <img src="./../assets/img/findus.jpg" width="900" height="400">
-        <h2 class="findus">
-              Findus
-        </h2>
-        <img src="./../assets/img/faqs.jpeg" width="900" height="400">
-        <h2 class="faqs">
-             FAQs
-        </h2>
-    </center>
-    <div class="bottom">
-        <img src="./../assets/img/zoologo.png" width="170" height="170">
-        <p class="font"><b>sign up to our news letter</b></p>
-        <br>
-        <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
-        <footer style="margin-left: 450px;">
-            <br><br><br><br><br><br><br><br>
-            contact
-            us| aboutus| careers| terms and condition
-        </footer>
     </div>
+
+    <div class="container">
+        <div class="extradetails">
+            <h1><strong>visit</strong></h1>
+                <h1>Zoo updates</h1>
+                <h1>prices</h1>
+                <h1> - annual pass</h1>
+                <h1> - free zoo visits</h1>
+                <h1> - online purchase terms &conditions</h1>
+                <h1> - discounts</h1>
+                <h1>opening times</h1>
+                <h1>group visits</h1>
+                <h1>find us</h1>
+                <h1>food&drink</h1>
+                <h1>zoo app</h1>
+                <h1>FAQs</h1>
+                <h1>terms of entry</h1>
+                    <input type="search" id="search" onchange="searchbar()">
+        </div>
+        <div class="sidebar">
+            <h1>
+                Your visit to Paignton Zoo starts right here!
+            </h1>
+            <p>We’re an education and conservation charity, and by visiting us you’re helping to save endangered<br>
+                animals both in the UK and across the globe. Our mission is to conserve species and their habitats,<br>
+                and to inspire everyone to help in the fight to protect wildlife.With over 2,500 different animals <br>
+                set in naturalistic indoor and outdoor exhibits, plus adventure play areas and a peaceful nature<br>
+                trail, there’s plenty for all ages to discover and explore.<br><br>
+
+                We recommend at least 3 to 4 hours for a visit to Paignton Zoo, but it would be best to leave a full<br>
+                day to
+                explore everything that we have to offer.
+
+                Your adventure starts here.</p>
+
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/ticketprices .jpg" width="900" height="400">
+            <h2 class="ticket">
+                Ticket prices
+            </h2>
+            <img src="./../assets/img/cheetah.jpg" width="900" height="400">
+            <h2 class="openingtime">
+                Opening time
+            </h2>
+            <img src="./../assets/img/accessibility.jpg" width="900" height="400">
+            <h2 class="accessibility">
+                Accessibility
+            </h2>
+            <img src="./../assets/img/findus.jpg" width="900" height="400">
+            <h2 class="findus">
+                Findus
+            </h2>
+            <img src="./../assets/img/FAQS.jpg" width="900" height="400">
+            <h2 class="faqs">
+                FAQs
+            </h2>
+
+        </div>
+        </div>
+        <div class="bottom">
+            <img src="./../assets/img/zoologo.png" width="170" height="170">
+            <p class="font"><b>sign up to our news letter</b></p>
+            <br>
+            <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
+            <footer style="margin-left: 450px;">
+                <br><br><br><br><br><br><br><br>
+                contact
+                us| aboutus| careers| terms and condition
+            </footer>
+        </div>
 </body>
 
 </html>
