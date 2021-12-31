@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>addcart</title>
+    <style>
+        .a1 {
+            position: static;
+            /* margin-left: 100px; */
+            /* width:1800px; */
+            height: 150px;
+            border: 3px;
+            background-color: #5499C7;
+            font-size: 50px;
+            color: white;
+        }
+
+        .a2 {
+            height: 80px;
+            /* border: 3px; */
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
+        nav {
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            font-family: cursive;
+            border-spacing: 20px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        .a1 img {
+            margin-top: 40px;
+            margin-left: 240px;
+        }
+        .extradetails{
+            width: 400px;
+            height: 950px;
+            background-color:#1f3451;
+            font-size: 16px;
+            color: white;
+            margin-left: 230px;
+            position: absolute;
+
+        }
+        .extradetails h2{
+            margin-left: 5px;
+        }
+        .maindetails{
+            margin-left: 800px;
+        }
+        .juniorkeeper{
+            /* margin-left: 0%; */
+            position: absolute;
+            width: 100%;
+            height: 50vh;
+        }
+        
+        .smalldiv1{
+            width: 40%;
+            height: 60vh;
+            background-color: rgb(17, 179, 207);
+            position: absolute;
+        }
+        #img-div {
+            /* width: 300px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: arial;
+            position: absolute;
+            display: flex; */
+            width: 40%;
+            height: 60vh;
+            background-color: rgb(17, 179, 207);
+            position: absolute;
+            margin-left: 800px;
+            
+            grid-column: div 1;
+        }
+
+        #addpic {
+            /* width: 25%;
+            height: 60vh;
+            background-color: #0fb158;
+            position: absolute;
+            margin-left: 30%;
+            display: flex; */
+            position: absolute;
+            width: 100%;
+            height: 50vh;
+       
+        }
+
+        #adoptbt {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        #adoptbt:hover {
+            opacity: 0.7;
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            margin-left: 8%;
+            position: absolute
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="a1">
+        <img src="./../assets/img/zoologo.png" alt="image missing" width="150" height="150">
+    </div>
+    <div class="a2">
+
+        <nav>
+            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+        </nav>
+
+    </div>
+    <h2 style="text-align:center">Product Card</h2>
+    <div class="container">
+        <div class="extradetails">
+
+            <h1>gifts and experience</h1>
+            <hr>
+
+            <h2>Admission And Tickets</h2>
+            <h2> -Annual Pass</h2>
+            <h2> -Animal Experiences</h2>
+            <h2> -Animal Adoptions</h2>
+            <h2> -Annual Pass Renewals</h2>
+            <h2> -Terms of Entry</h2>
+            <h2> -Online Purchase Terms & Conditions</h2>
+            <h2>Opening Times</h2>
+            <h2>Group Visits</h2>
+            <h2>Find Us</h2>
+            <h2>Whats On</h2>
+            <h2>Food & Drink</h2>
+            <h2>Gifts & Souvenirs</h2>
+            <h2>Accessibility</h2>
+            <h2>Updates</h2>
+            <h2>Days Out in Devon</h2>
+            <h2>Wet Weather Days Out in Devon</h2>
+            <h2>FAQs</h2>
+
+        </div>
+        <div class="maindetails">
+            <div class="smalldiv1">
+                <h3>Junior Keeper Experience</h3>
+                <img src="./../assets/img/lion.jpg" class="juniorkeeper" >
+                  <button>adopt now</button> 
+            </div>
+
+            </div>
+
+    </div>
+    <div id="addingimg">
+    </div>
+    <script>
+        let AddAnimal = [];
+        function renderAnimal(addItem) {
+            let leng = addItem.length;
+            console.log(leng);
+            let adding;
+            for (let i = 0; i < leng; i++) {
+                let obj = addItem[i];
+                let animal = `<div id ="img-div" >
+                    <h1>${obj.nanimal}</h1>
+                    <img src=${obj.aurl} id="addpic" alt="imagemissing">
+                    <p><button type="button" id="adoptbt"onclick="clickhandler()">adopt now</button></p>
+                    </div>`;
+                adding = adding + animal;
+            }
+            document.getElementById("addingimg").innerHTML = adding;
+        }
+        let getvalue = JSON.parse(localStorage.getItem("value"));
+        renderAnimal(getvalue);
+        console.log(getvalue);
+
+    </script>
 </body>
+
 </html>
