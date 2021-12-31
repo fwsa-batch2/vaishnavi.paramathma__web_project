@@ -33,6 +33,7 @@
             font-family: cursive;
             border-spacing: 20px;
             margin-left: 10px;
+            text-align: center;
         }
 
         .a1 img {
@@ -47,10 +48,17 @@
             margin-left: 600px;
             margin-top: 200px;
         }
-        .loginbox h1{
+
+        .loginbox h1 {
             font-size: 30px;
             margin-left: 250px;
         }
+
+        .loginbox h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
         .loginbox form input {
             width: 400px;
             height: 40px;
@@ -63,24 +71,59 @@
             font-size: 16px;
             color: black;
         }
-        .loginbox button{
+
+        .loginbox button {
             margin-top: 200px;
             margin-left: 200px;
         }
+        .bottom {
+        position: relative;
+        height: 220px;
+        border: 3px;
+        background-color: #5499C7;
+        font-size: 20px;
+        color: black;
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .bottom img {
+        margin-top: 30px;
+        margin-left: 30px;
+
+    }
+
+    .font {
+        position: absolute;
+        margin-left: 400px;
+        font-size: 30px;
+        margin-top: 45px;
+    }
+
+    .button2 {
+        background-color: #07dee6;
+        color: black;
+        border: 2px solid white;
+        font-size: 30px;
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
     </style>
 </head>
 
 <body>
     <div class="a1">
-        <img src="./../assets/img/zoologo.png" width="150" height="150">
+
+        <img src="./../assets/img/zoologo.png" alt="zoologo" width="150" height="150">
     </div>
     <div class="a2">
-        <center>
-            <nav>
-                &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
-                &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
-            </nav>
-        </center>
+        <nav>
+            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+        </nav>
     </div>
     <div class="loginbox">
         <h1>
@@ -94,11 +137,22 @@
         <form onsubmit="submithandler()">
             <br><br><br><input type="email" placeholder="email address" id="mail">
             <br><br><br><input type="password" placeholder="Create  your password" id="password" minlength="6">
-            <br><br><br><input type="submit" value="login"> 
+            <br><br><br><input type="submit" value="login">
         </form>
-        
+
     </div>
-    <script  src="./../assets/js/login.js">
+    <div class="bottom">
+        <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
+        <p class="font"><strong>sign up to our news letter</strong></p>
+        <br>
+        <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
+        <footer style="margin-left: 500px;">
+            <br><br><br><br><br><br><br><br>
+            contact
+            us| aboutus| careers| terms and condition
+        </footer>
+    </div>
+    <script src="./../assets/js/login.js">
     </script>
 </body>
 
