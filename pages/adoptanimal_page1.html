@@ -50,11 +50,16 @@
 
         .extradetails {
             width: 400px;
-            height: 1400px;
+            height: 1450px;
             background-color: #e7098b;
             margin-left: 230px;
             position: absolute;
 
+        }
+
+        #search {
+            width: 300px;
+            height: 30px;
         }
 
         .adoptiondetails {
@@ -126,17 +131,17 @@
             position: absolute;
         }
 
-        .button2{
+        .button2 {
             font-size: 30px;
             color: white;
             width: 200px;
             height: 50px;
             border-radius: 50px;
-            background-color:#e7098b; 
+            background-color: #e7098b;
             margin-top: 100px;
             margin-left: 50px;
         }
- 
+
         /* .adoptfrog img {
             margin-left: 200px;
         } */
@@ -164,10 +169,12 @@
             height: 30px;
             background-color: #0fb158;
         }
+
         .adopttapir {
             display: flex;
             margin-top: 30px;
         }
+
         .adopttapir h2 {
             margin-top: 50px;
             font-size: 40px;
@@ -175,9 +182,11 @@
             margin-left: 50px;
             position: absolute;
         }
+
         .adopttapir img {
             margin-left: 300px;
         }
+
         .adopttapir button {
             font-size: 30px;
             color: white;
@@ -186,7 +195,7 @@
             border-radius: 50px;
             background-color: #044068;
             margin-top: 100px;
-         
+
         }
 
         .empty4 {
@@ -256,16 +265,16 @@
         }
 
         .button2 {
-        background-color: #07dee6;
-        color: black;
-        border: 2px solid white;
-        font-size: 30px;
-        width: 300px;
-        height: 50px;
-        border-radius: 20px;
-        margin-left: 200px;
-        margin-top: 100px;
-    }
+            background-color: #07dee6;
+            color: black;
+            border: 2px solid white;
+            font-size: 30px;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
     </style>
 </head>
 
@@ -323,7 +332,7 @@
                     <h2>Adopt a tree frog</h2>
                     <h2>Adopt a orang-utan</h2>
                     <h2>Adoption terms and conditions</h2>
-                    <input type="search"  id="search" onchange="searchbar()">
+                    <input type="search" placeholder="search" id="search" onchange="searchbar()">
         </div>
         <div class="adoptiondetails">
             <h1> Our animal adoption packs make a great gift for someone special, and you will be supporting the zoo at
@@ -381,7 +390,8 @@
     </div>
     <div class="bottom">
         <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
-        <p class="font"><strong>sign up to our news letter</strongss></p>
+        <p class="font"><strong>sign up to our news letter</strongss>
+        </p>
         <br>
         <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
         <footer style="margin-left: 450px;">
@@ -391,16 +401,16 @@
         </footer>
     </div>
     <script>
-        function searchbar(){
-            let searchItem=document.getElementById("search").value;
-            if ("homepage"==searchItem) {
+        function searchbar() {
+            let searchItem = document.getElementById("search").value;
+            if ("homepage" == searchItem) {
                 window.open("/pages/homepage.html")
             }
-            else if ("zoo updates"==searchItem) {
-               window.open("/pages/zooupdate.html") 
+            else if ("zoo updates" == searchItem) {
+                window.open("/pages/zooupdate.html")
             }
-            
-            else{
+
+            else {
                 alert("page not found")
             }
         }

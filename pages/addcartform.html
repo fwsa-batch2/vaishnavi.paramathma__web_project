@@ -6,21 +6,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <style>
+        .a1 {
+            position: static;
+            /* margin-left: 100px; */
+            /* width:1800px; */
+            height: 150px;
+            border: 3px;
+            background-color: #5499C7;
+            font-size: 50px;
+            color: white;
+        }
+
+        .a2 {
+            height: 80px;
+            /* border: 3px; */
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
+        nav {
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            font-family: cursive;
+            border-spacing: 20px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        .a1 img {
+            margin-top: 40px;
+            margin-left: 240px;
+        }
+
+        .loginbox {
+            width: 600px;
+            height: 400px;
+            background-color: #5499C7;
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+
+        .loginbox h1 {
+            font-size: 30px;
+            margin-left: 230px;
+            padding-top: 10px;
+        }
+
+        .loginbox h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .loginbox form input {
+            width: 400px;
+            height: 40px;
+            border: none;
+            margin-left: 100px;
+            position: absolute;
+            margin-top: 100px;
+            font-size: 16px;
+            color: black;
+        }
+
+        .loginbox button {
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+        .bottom {
+        position: relative;
+        height: 220px;
+        border: 3px;
+        background-color: #5499C7;
+        font-size: 20px;
+        color: black;
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .bottom img {
+        margin-top: 30px;
+        margin-left: 30px;
+
+    }
+
+    .font {
+        position: absolute;
+        margin-left: 400px;
+        font-size: 30px;
+        margin-top: 45px;
+    }
+
+    .button2 {
+        background-color: #07dee6;
+        color: black;
+        border: 2px solid white;
+        font-size: 30px;
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    #buttons{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color:#e7098b ;
+            text-align: center;
+            cursor: pointer;
+            width: 200px;
+            font-size: 18px;
+    }
+    </style>
 </head>
 
 <body>
-    <form onsubmit="submitHandler()">
-        <div>
-            <input type="text" placeholder="animal name " id="animalname" required>
-        </div>
+    <div class="a1">
 
-        <div>
-            <input type="text" placeholder="image url" id="imageurl" required>
-        </div>
+        <img src="./../assets/img/zoologo.png" alt="zoologo" width="150" height="150">
+    </div>
+    <div class="a2">
+        <nav>
+            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+        </nav>
+    </div>
+    <div class="loginbox">
+        <h1>
+            Add animal
 
-        <button type="submit"> submit
-        </button>
-    </form>
+        </h1>
+        <hr>
+        <form onsubmit="submithandler()">
+                <input type="text" placeholder="animal name " id="animalname" required><br><br><br>
+
+                <input type="text" placeholder="image url" id="imageurl" required>
+    
+            <button type="submit" id="buttons"> submit
+            </button>
+        </form>
+
+    </div>
+<div class="bottom">
+    <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
+    <p class="font"><strong>sign up to our news letter</strong></p>
+    <br>
+    <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
+    <footer style="margin-left: 500px;">
+        <br><br><br><br><br><br><br><br>
+        contact
+        us| aboutus| careers| terms and condition
+    </footer>
     <script>
         let list = [];
          function onpageload(){
