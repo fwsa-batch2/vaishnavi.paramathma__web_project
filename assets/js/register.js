@@ -8,7 +8,7 @@ function onPageLoad(){
 onPageLoad();
 function submitFunction() {
    
-    event.preventDefault();
+    event.preventDefault(event);
     
     let firstname = document.getElementById("fname").value;
     let secondname = document.getElementById("sname").value;

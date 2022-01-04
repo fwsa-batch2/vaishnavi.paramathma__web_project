@@ -1,5 +1,5 @@
 function submithandler() {
-    event.preventDefault();
+    event.preventDefault(event);
     
     let emailid = document.getElementById("mail").value;
     let password = document.getElementById("password").value;
@@ -11,14 +11,14 @@ function submithandler() {
 
 let userexist = false;
 
-for(i=0; i<currentuser.length; i++){
+ for(let i=0; i<currentuser.length; i++){
     let useremail = currentuser[i].email;
     let userpassword = currentuser[i].password;
  
     if(useremail==emailid && userpassword==password){
         userexist = true;
         localStorage.setItem("loggeduser",emailid);
-        // alert("successfully logged");
+        
         break;
     }
 }

@@ -31,6 +31,7 @@
             font-family: cursive;
             border-spacing: 20px;
             margin-left: 10px;
+            text-align: center;
         }
 
         .a1 img {
@@ -95,11 +96,22 @@
 
         Don't forget...staying safe is everyone's responsibility; for full details on the measures we've taken to<br>
         ensure you have a safe and happy visit, take a look at our Staying safe at the Zoo webpage.<br><br>
+        <form >
         <div>
-            <input type="date" placeholder="Date of birth" id="dob"  max="2021-12-17" required>
+            <input type="date" onchange="submitFunction()"placeholder="Date of birth" id="dob"  max="2021-12-17" required>
         </div>
-        
-               
+    </form>
+        <script>
+            let array = [];
+             
+            function submitFunction(){
+                event.preventDefault();
+                let dates = document.getElementById("dob").value;
+
+                console.log(dates);
+
+            }
+        </script>       
 </body>
 
 </html>
