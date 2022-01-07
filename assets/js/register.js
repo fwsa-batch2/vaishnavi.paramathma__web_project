@@ -6,9 +6,9 @@ function onPageLoad(){
     }
 }
 onPageLoad();
-function submitFunction() {
+function submitFunction(event) {
    
-    event.preventDefault(event);
+    event.preventDefault();
     
     let firstname = document.getElementById("fname").value;
     let secondname = document.getElementById("sname").value;
@@ -37,7 +37,7 @@ function submitFunction() {
             "password": password,
             "confirmPassword": confirmpassword,
         }
-        data.push(userdetails) // obj
+        data.push(userdetails) 
      const customerlist = JSON.stringify(data);
      localStorage.setItem("userdetails",customerlist );
       window.location.href="./../pages/login.html"

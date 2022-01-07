@@ -1,5 +1,5 @@
-function submithandler() {
-    event.preventDefault(event);
+function submithandler(event) {
+    event.preventDefault();
     
     let emailid = document.getElementById("mail").value;
     let password = document.getElementById("password").value;

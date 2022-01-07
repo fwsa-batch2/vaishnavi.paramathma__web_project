@@ -304,17 +304,13 @@
             border: solid 4px white;
         }
 
-        .buttonlist {
+        /* .buttonlist {
             overflow: scroll;
             width: 720px;
             height: 70px;
             margin-left: 50px;
-        }
+        } */
 
-        .animalwitha {
-            margin-top: 100px;
-            margin-left: 700px;
-        }
 
         .buttonholder {
             display: flex;
@@ -347,16 +343,30 @@
         }
 
         .button2 {
-        background-color: #07dee6;
-        color: black;
-        border: 2px solid white;
-        font-size: 30px;
-        width: 300px;
-        height: 50px;
-        border-radius: 20px;
-        margin-left: 200px;
-        margin-top: 100px;
-    }
+            background-color: #07dee6;
+            color: black;
+            border: 2px solid white;
+            font-size: 30px;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        .anim {
+            position: relative;
+            left: 750px;
+            top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+        }
+
+        .animalwitha {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -431,57 +441,57 @@
                     <button class="prevbutton" id="previous"><a href="#">&#62; </a></button>
                 </div>
                 <div class="buttonlist" id="buttonli">
-                    <button class="buttona"><a href="./a-zanimals.html">A</a></button>
+                    <button class="buttona"><a href="?filterBy=a" onclick="button('a')">A</a></button>
 
-                    <button class="buttonb"><a href="./b-letter-animal.html">B</a></button>
+                    <button class="buttonb"><a href="?filterBy=b">B</a></button>
 
-                    <button class="buttonc"><a href="./c-letter-animal.html">C</a></button>
+                    <button class="buttonc"><a href="?filterBy=c">C</a></button>
 
-                    <button class="buttond"><a href="./d-letter-animal.html">D</a></button>
+                    <button class="buttond"><a href="?filterBy=d">D</a></button>
 
-                    <button class="buttone"><a href="./e-letter-animal.html">E</a></button>
+                    <button class="buttone"><a href="?filterBy=e">E</a></button>
 
-                    <button class="buttonf"><a href="./f-letter-animal.html">F</a></button>
+                    <button class="buttonf"><a href="?filterBy=f">F</a></button>
 
-                    <button class="buttong"><a href="./g-letter-animal.html">G</a></button>
+                    <button class="buttong"><a href="?filterBy=g">G</a></button>
 
-                    <button class="buttonh"><a href="./h-letter-animal.html">H</a></button>
+                    <button class="buttonh"><a href="?filterBy=h">H</a></button>
 
-                    <button class="buttoni"><a href="./i-letter-animal.html">I</a></button>
+                    <button class="buttoni"><a href="?filterBy=i">I</a></button>
 
-                    <button class="buttonj"><a href="./j-letter-animal.html">J</a></button>
+                    <button class="buttonj"><a href="?filterBy=j">J</a></button>
 
-                    <button class="buttonk"><a href="./k-letter-animal.html">K</a></button>
+                    <button class="buttonk"><a href="?filterBy=k">K</a></button>
 
-                    <button class="buttonl"><a href="./l-letter-animal.html">L</a></button>
+                    <button class="buttonl"><a href="#?filterBy=l">L</a></button>
 
-                    <button class="buttonm"><a href="./m-letter-animal.html">M</a></button>
+                    <button class="buttonm"><a href="?filterBy=m">M</a></button>
 
-                    <button class="buttonn"><a href="./n-letter-animal.html">N</a></button>
+                    <button class="buttonn"><a href="?filterBy=n">N</a></button>
 
-                    <button class="buttono"><a href="./o-letter-animal.html">O</a></button>
+                    <button class="buttono"><a href="?filterBy=o">O</a></button>
 
-                    <button class="buttonp"><a href="./p-letter-animal.html">P</a></button>
+                    <button class="buttonp"><a href="?filterBy=p">P</a></button>
 
-                    <button class="buttonq"><a href="./q-letter-animal.html">Q</a></button>
+                    <button class="buttonq"><a href="?filterBy=q">Q</a></button>
 
-                    <button class="buttonr"><a href="./r-letter-animal.html">R</a></button>
+                    <button class="buttonr"><a href="?filterBy=r">R</a></button>
 
-                    <button class="buttons"><a href="./s-letter-animal.html">S</a></button>
+                    <button class="buttons"><a href="?filterBy=s">S</a></button>
 
-                    <button class="buttont"><a href="./t-letter-animal.html">T</a></button>
+                    <button class="buttont"><a href="?filterBy=t">T</a></button>
 
-                    <button class="buttonu"><a href="./u-letter-animal.html">U</a></button>
+                    <button class="buttonu"><a href="?filterBy=u">U</a></button>
 
-                    <button class="buttonv"><a href="./v-letter-animal.html">V</a></button>
+                    <button class="buttonv"><a href="?filterBy=v">V</a></button>
 
-                    <button class="buttonw"><a href="./w-letter-animal.html">W</a></button>
+                    <button class="buttonw"><a href="?filterBy=w">W</a></button>
 
-                    <button class="buttonx"><a href="./x-letter-animal.html">X</a></button>
+                    <button class="buttonx"><a href="?filterBy=x">X</a></button>
 
-                    <button class="buttony"><a href="./y-letter-animal.html">Y</a></button>
+                    <button class="buttony"><a href="?filterBy=y">Y</a></button>
 
-                    <button class="buttonz"><a href="./z-letter-animal.html">Z</a></button>
+                    <button class="buttonz"><a href="?filterBy=z">Z</a></button>
 
                 </div>
 
@@ -490,16 +500,70 @@
                 </div>
             </div>
         </div>
-        <div class="animalwitha">
-            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400">
-            
-            <img src="./../assets/img/annamturtle.jpg" alt="annamturtle" width="300" height="400">
-            <img src="./../assets/img/lion.jpg" alt="lion" width="300" height="400"><br><br><br><br>
-            <img src="./../assets/img/azara.jpg" alt="azara" width="300" height="400">
-            <img src="./../assets/img/armadillo.jpg" alt="armadillo" width="300" height="400">
+        <div class="anim">
+
+            <div id="animalurl">
+
+            </div>
+            <div id="animalsname">
+
+            </div>
         </div>
+
+        <!-- <div class="anim">
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400">   
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400">   
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400">   
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400">  
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+        <div class="animalwitha">
+            <img src="./../assets/img/tortoise.jpg" alt="tortoise" width="300" height="400"> 
+        </div>
+
+    </div> -->
     </div>
-    <div class="bottom">
+
+    <!-- <div class="bottom">
         <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
         <p class="font"><strong>sign up to our news letter</strong></p>
         <br>
@@ -509,9 +573,60 @@
             contact
             us| aboutus| careers| terms and condition
         </footer>
-    </div>
+    </div> -->
+
+    <script>
+
+        let filterAlphabet = "a";
+
+        function filteredAnimals() {
+
+            const animalList = JSON.parse(localStorage.getItem('animaldetails'));
+
+            let storage = animalList.filter(filterByAlp)
+            const len = storage.length
+
+            let listedAnimal = ""
+            for (let i = 0; i < len; i++) {
+                let index = storage[i];
+
+                const animalurl = "<img src=" + index.iUrl + "></img>"
+                const animalsname = "<h1>" + index.nameOfAnimal + "</h1>"
+                listedAnimal = listedAnimal + animalurl + animalsname;
 
 
+                // const animalsHTML = `
+                // <div>
+                //     <img src="${index.iUrl}"> </img>
+                //     <h1> ${index.nameOfAnimal} </h1>
+                // </div>
+                // `   
+                // listedAnimal = listedAnimal + animalsHTML;
+            }
+
+
+            document.getElementById("animalurl").innerHTML = listedAnimal;
+
+
+        }
+
+        function getfilterbyfromurl() {
+            const currentURL = window.location.search;
+            const urlparams = new URLSearchParams(currentURL);
+
+            const paramfilter = urlparams.get("filterBy")
+            console.log(paramfilter);
+            filterAlphabet = paramfilter;
+
+        }
+
+        getfilterbyfromurl();
+        filteredAnimals();
+
+
+        function filterByAlp(animalDetails) { return animalDetails.nameOfAnimal.startsWith(filterAlphabet) }
+
+    </script>
 </body>
 
 </html>
