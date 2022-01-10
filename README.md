@@ -6,36 +6,34 @@
 5.changing pages without without changing URL<br>
 
 <strong>REGISTER</strong><br>
-User name<br>
-User mail id<br>
-Password<br>
-Confirm Password<br>
-Acceptance Criteria<br>
-All input fields are required.<br>
-User name must contain 3 characters and must not be empty.No special characters are allowed.<br>
-Email id must contain 2 characters before the suffix @gmail.com.<br>
-Email id entered must not exist in local storage already.<br>
-Password and Confirm password fields must contain minimum 8 and maximum 15 characters with atleast 1 lowercase, 1 uppercase , 1 special character except "space".<br>
-Password and Confirm password fields must contain same value.<br>
-If everything is validated, redirect to login page.<br>
-
-<strong>Confirm Password</strong><br>
-      Acceptance Criteria<br>
-All input fields are required.<br>
-User name must contain 3 characters and must not be empty.No special characters are allowed.<br>
-Email id must contain 2 characters before the suffix @gmail.com.<br>
-Email id entered must not exist in local storage already.<br>
-Secret code for admins is Freshwork@2001. Any other code is not accepted for successful registration.<br>
-Password and Confirm password fields must contain minimum 8 and maximum 15 characters with atleast 1 <br>lowercase, 1 uppercase , 1 special character except "space".<br>
-Password and Confirm password fields must contain same value.<br>
-If everything is validated, redirect to login page.<br><br>
+1.all input fields are required<br>
+2.user name must contain 3 characters and must not bemempty<br>
+ 3.email id entered must not eist in localstorage already<br>
+ 4.field should have abc@gmail.com<br>
+ 5.must match the format required
+ 6.if everything is validated redirect to login page
+<br><br>
 
 <strong>LOGIN</strong><br>
-Email id<br>
-Password<br>
-Acceptance Criteria<br>
-All input fields are required.<br>
-Email id and password should match with the local storage content.<br>
-If everything is validated, redirect to home page.<br>
+Acceptance Criteria<br><br>
+1.All input fields are required.<br>
+2.Email id and password should match with the local storage content.<br>
+3.If everything is validated, redirect to home page.<br>
 
+<strong>add animals</strong><br>
+Acceptance Criteria<br><br>
+ 1.All input fields are required.<br>
+ 2.Add album button is in the list album page.
+3.Only image url can accepts in this field.
+4.If everything is validated the details will store in localstorage and redirect to album list page.
+
+
+ <strong>search bar</strong><br>
+Acceptance Criteria<br><br>
+1.type the pages name to search pages<br>
+
+<strong>filter</strong><br>
+Acceptance Criteria<br><br>
+1.user can filter the pages by name of the animal starting letter
+ 
 
