@@ -1,3 +1,8 @@
+# paington zoo
+#### Sonarcloud Link for Paington Zoo:https://sonarcloud.io/project/overview?id=fwsa-batch-02_paingtonzooapp-ui<br>
+#### Netlify Link For Paington Zoo:https://paingtonzooapp-ui-vaishanviparamathma.netlify.app/<br>
+
+
 #### FEATURES
 1.register(completed)<br>
 2.login(completed)<br>
