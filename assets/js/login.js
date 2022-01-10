@@ -11,9 +11,9 @@ function submithandler(event) {
 
 let userexist = false;
 
- for(let i=0; i<currentuser.length; i++){
-    let useremail = currentuser[i].email;
-    let userpassword = currentuser[i].password;
+ for(let i of currentuser){
+    let useremail = i.email;
+    let userpassword = i.password;
  
     if(useremail==emailid && userpassword==password){
         userexist = true;
