@@ -75,52 +75,54 @@
             margin-top: 200px;
             margin-left: 200px;
         }
+
         .bottom {
-        position: relative;
-        height: 220px;
-        border: 3px;
-        background-color: #5499C7;
-        font-size: 20px;
-        color: black;
-        display: flex;
-        margin-top: 100px;
-    }
+            position: relative;
+            height: 220px;
+            border: 3px;
+            background-color: #5499C7;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            margin-top: 100px;
+        }
 
-    .bottom img {
-        margin-top: 30px;
-        margin-left: 30px;
+        .bottom img {
+            margin-top: 30px;
+            margin-left: 30px;
 
-    }
+        }
 
-    .font {
-        position: absolute;
-        margin-left: 400px;
-        font-size: 30px;
-        margin-top: 45px;
-    }
+        .font {
+            position: absolute;
+            margin-left: 400px;
+            font-size: 30px;
+            margin-top: 45px;
+        }
 
-    .button2 {
-        background-color: #07dee6;
-        color: black;
-        border: 2px solid white;
-        font-size: 30px;
-        width: 300px;
-        height: 50px;
-        border-radius: 20px;
-        margin-left: 200px;
-        margin-top: 100px;
-    }
-    #buttons{
+        .button2 {
+            background-color: #07dee6;
+            color: black;
+            border: 2px solid white;
+            font-size: 30px;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        #buttons {
             border: none;
             outline: 0;
             padding: 12px;
             color: white;
-            background-color:#e7098b ;
+            background-color: #e7098b;
             text-align: center;
             cursor: pointer;
             width: 200px;
             font-size: 18px;
-    }
+        }
     </style>
 </head>
 
@@ -142,35 +144,36 @@
         </h1>
         <hr>
         <form onsubmit="submithandler()">
-                <input type="text" placeholder="animal name " id="animalname" required><br><br><br>
+            <input type="text" placeholder="animal name " id="animalname" required><br><br><br>
 
-                <input type="text" placeholder="image url" id="imageurl" required>
-    
+            <input type="text" placeholder="image url" id="imageurl" required>
+
             <button type="submit" id="buttons"> submit
             </button>
         </form>
 
     </div>
-<div class="bottom">
-    <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
-    <p class="font"><strong>sign up to our news letter</strong></p>
-    <br>
-    <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
-    <footer style="margin-left: 500px;">
-        <br><br><br><br><br><br><br><br>
-        contact
-        us| aboutus| careers| terms and condition
-    </footer>
+    <div class="bottom">
+        <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
+        <p class="font"><strong>sign up to our news letter</strong></p>
+        <br>
+        <button class="button2"><a href="./../pages/zoonewsupdate.html"> subscribe </a></button>
+        <footer style="margin-left: 500px;">
+            <br><br><br><br><br><br><br><br>
+            contact
+            us| aboutus| careers| terms and condition
+        </footer>
+    </div>
     <script>
         let list = [];
-         function onpageload(){
-              let changetoparse = JSON.parse(localStorage.getItem("value"))
-              if(changetoparse != null){
-                  list=changetoparse
-              }
-             
+        function onpageload() {
+            let changetoparse = JSON.parse(localStorage.getItem("value"))
+            if (changetoparse != null) {
+                list = changetoparse
+            }
+
         }
-         onpageload()
+        onpageload()
         function submitHandler() {
             event.preventDefault();
 
@@ -185,7 +188,7 @@
             }
             list.push(obj);
             let changetostring = JSON.stringify(list);
-            localStorage.setItem("value",changetostring);
+            localStorage.setItem("value", changetostring);
         }
 
 

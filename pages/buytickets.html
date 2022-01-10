@@ -98,7 +98,7 @@
         ensure you have a safe and happy visit, take a look at our Staying safe at the Zoo webpage.<br><br>
         <form >
         <div>
-            <input type="date" onchange="submitFunction()"placeholder="Date of birth" id="dob"  max="2021-12-17" required>
+            <input type="date" onchange="submitFunction()"placeholder="Date of birth" id="dob"   required>
         </div>
     </form>
         <script>
@@ -109,7 +109,7 @@
                 let dates = document.getElementById("dob").value;
 
                 console.log(dates);
-
+                document.getElementById('datePicker').value = new Date().toDateInputValue();
             }
         </script>       
 </body>
