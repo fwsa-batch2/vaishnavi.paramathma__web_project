@@ -46,8 +46,8 @@ function submitFunction(event) {
 }
     function isEmailAlreadyExist(currentemail){
      let used = false;
-      for( let i=0;i<data.length;i++){
-          const google = data[i].email;
+      for( let i of currentuser){
+          const google = i.email;
           if(currentemail == google){
             used = true;
             break;
