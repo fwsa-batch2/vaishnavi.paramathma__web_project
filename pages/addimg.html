@@ -40,6 +40,7 @@
             margin-top: 40px;
             margin-left: 240px;
         }
+
         .loginbox {
             width: 600px;
             height: 400px;
@@ -65,15 +66,16 @@
             border: none;
             margin-left: 100px;
             position: absolute;
-            margin-top: 100px;
+            margin-top: 50px;
             font-size: 16px;
             color: black;
         }
 
         .loginbox button {
-            margin-top: 200px;
-            margin-left: 200px;
+            margin-top: 120px;
+            margin-left: 280px;
         }
+
         .bottom {
             position: relative;
             height: 220px;
@@ -129,12 +131,13 @@
 
         </h1>
         <hr>
-    <form onsubmit="submithandler(event)">
-        <input type="text" placeholder="animalname" id="name" required><br><br><br><br>
-        <input type="text" placeholder="url" title="This field accepts only Image Url" id="url" required>
-        <button type="submit" > submit
-        </button>
-    </form>
+        <form onsubmit="submithandler(event)">
+            <input type="text" placeholder="animalname" id="name" required><br><br><br><br>
+            <input type="text" placeholder="url" id="url" required><br><br><br><br>
+            <input type="text" placeholder="about animals" id="aboutanimal" required>
+            <button type="submit"> submit
+            </button>
+        </form>
     </div>
     <div class="bottom">
         <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
@@ -146,26 +149,27 @@
             contact
             us| aboutus| careers| terms and condition
         </footer>
-        </div>
+    </div>
     <script>
         let array = [];
 
         function submitFunction() {
             let changetoparse = JSON.parse(localStorage.getItem("animaldetails"));
-             if(changetoparse!=null){
+            if (changetoparse != null) {
                 array = changetoparse
-             }
+            }
         }
         submitFunction()
         function submithandler(event) {
             event.preventDefault();
             let animalname = document.getElementById("name").value;
             let imageurl = document.getElementById("url").value;
-
-            let obj = {
-                "nameOfAnimal": animalname,
-                "iUrl": imageurl,
-            }
+            let knowmore = document.getElementById("aboutanimal").value
+                let obj = {
+                    "nameOfAnimal": animalname,
+                    "iUrl": imageurl,
+                    "aboutA":knowmore,
+                }
             array.push(obj);
             let changetostring = JSON.stringify(array);
             localStorage.setItem("animaldetails", changetostring);
