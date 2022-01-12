@@ -18,13 +18,14 @@ let userexist = false;
     if(useremail==emailid && userpassword==password){
         userexist = true;
         localStorage.setItem("loggeduser",emailid);
-        
+      alert("logged in succesfully");
+      window. location.href = "./../index.html"
         break;
     }
 }
     if(!userexist){
     
-        document.getElementById("error").innerHTML="invalid emailid or password";
+        alert("invalid emailid or password");
         return null;
     }
 }
