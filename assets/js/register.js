@@ -46,6 +46,7 @@ function submitFunction(event) {
 }
     function isEmailAlreadyExist(currentemail){
      let used = false;
+     let currentuser = JSON.parse(localStorage.getItem("userdetails"));
       for( let i of currentuser){
           const google = i.email;
           if(currentemail == google){
