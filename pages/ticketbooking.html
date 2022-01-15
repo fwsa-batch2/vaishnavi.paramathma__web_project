@@ -9,13 +9,44 @@
     <style>
         .a1 {
             position: static;
-            /* margin-left: 100px; */
-            /* width:1800px; */
-            height: 150px;
+            height: 190px;
             border: 3px;
-            background-color: #5499C7;
+            background-color: #044068;
             font-size: 50px;
             color: white;
+        }
+
+        .logo {
+            margin-top: 40px;
+            margin-left: 240px;
+            /* position: absolute; */
+
+        }
+
+        .cart {
+            width: 3%;
+            height: 6vh;
+            padding-left: 860px;
+            margin-bottom: 30px;
+        }
+
+        .cart1 {
+            width: 3%;
+            height: 6vh;
+            padding-left: 12px;
+            margin-bottom: 30px;
+        }
+
+        .cart2 {
+            width: 5%;
+            height: 8vh;
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+
+        header {
+            margin-left: 1300px;
+            font-size: 20px;
         }
 
         .a2 {
@@ -36,10 +67,6 @@
             text-align: center;
         }
 
-        .a1 img {
-            margin-top: 40px;
-            margin-left: 240px;
-        }
 
         .extradetails {
             width: 400px;
@@ -49,15 +76,15 @@
             position: absolute;
         }
 
-        .extradetails h2 {
-            padding-left: 20px;
+        .extradetails h3 {
+            padding-left: 25px;
             font-size: 20px;
             color: white;
             font-weight: lighter;
         }
 
         .extradetails h1 {
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
             color: white;
         }
@@ -70,17 +97,20 @@
             font-size: 50px;
             color: #044068;
         }
+
         .animalwitha {
             margin-top: 100px;
             margin-left: 700px;
         }
+
         h1 {
             font-size: 50px;
             color: #044068;
         }
 
-        p {
+        .sidebar p {
             font-size: 20px;
+            color: #044068;
         }
 
         .ticket {
@@ -123,6 +153,14 @@
             text-align: center;
         }
 
+        #imagehover {
+            opacity: 0.7;
+        }
+
+        h2 {
+            margin-left: -150px;
+        }
+
         .bottom {
             position: relative;
             height: 220px;
@@ -147,22 +185,28 @@
         }
 
         .button2 {
-        background-color: #07dee6;
-        color: black;
-        border: 2px solid white;
-        font-size: 30px;
-        width: 300px;
-        height: 50px;
-        border-radius: 20px;
-        margin-left: 200px;
-        margin-top: 100px;
-    }
+            background-color: #07dee6;
+            color: black;
+            border: 2px solid white;
+            font-size: 30px;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
     </style>
 </head>
 
 <body>
     <div class="a1">
-        <img src="./../assets/img/zoologo.png" alt="zoologo" width="150" height="150">
+        <header>
+            About us| Contact us| Media| Findus
+        </header>
+        <img src="./../assets/img/zoologo.png" class="logo" alt="image missing" width="180" height="100">
+        <img src="./../assets/img/cart.png" class="cart" alt="cart">
+        <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
+        <img src="./../assets/img/wildplanettrust-logo.png" class="cart2" alt="cart">
     </div>
     <div class="a2">
 
@@ -176,20 +220,20 @@
     <div class="container">
         <div class="extradetails">
             <h1><strong>visit</strong></h1>
-                <h1>Zoo updates</h1>
-                <h1>prices</h1>
-                <h1> - annual pass</h1>
-                <h1> - free zoo visits</h1>
-                <h1> - online purchase terms &conditions</h1>
-                <h1> - discounts</h1>
-                <h1>opening times</h1>
-                <h1>group visits</h1>
-                <h1>find us</h1>
-                <h1>food&drink</h1>
-                <h1>zoo app</h1>
-                <h1>FAQs</h1>
-                <h1>terms of entry</h1>
-                    <input type="search" id="search" onchange="searchbar()">
+            <h3>Zoo updates</h3>
+            <h3>prices</h3>
+            <h3> - annual pass</h3>
+            <h3> - free zoo visits</h3>
+            <h3> - online purchase terms &conditions</h3>
+            <h3> - discounts</h3>
+            <h3>opening times</h3>
+            <h3>group visits</h3>
+            <h3>find us</h3>
+            <h3>food&drink</h3>
+            <h3>zoo app</h3>
+            <h3>FAQs</h3>
+            <h3>terms of entry</h3>
+            <input type="search" id="search" onchange="searchbar()">
         </div>
         <div class="sidebar">
             <h1>
@@ -209,40 +253,40 @@
 
         </div>
         <div class="animalwitha">
-            <img src="./../assets/img/ticketprices .jpg" alt="ticketprices" width="900" height="400">
+            <img src="./../assets/img/ticketprices .jpg" alt="ticketprices" id="imagehover" width="900" height="400">
             <h2 class="ticket">
                 Ticket prices
             </h2>
-            <img src="./../assets/img/cheetah.jpg" alt="cheetah" width="900" height="400">
+            <img src="./../assets/img/cheetah.jpg" alt="cheetah" width="900" id="imagehover" height="400">
             <h2 class="openingtime">
                 Opening time
             </h2>
-            <img src="./../assets/img/accessibility.jpg" alt="accessibility" width="900" height="400">
+            <img src="./../assets/img/accessibility.jpg" alt="accessibility" id="imagehover" width="900" height="400">
             <h2 class="accessibility">
                 Accessibility
             </h2>
-            <img src="./../assets/img/findus.jpg" alt="findus" width="900" height="400">
+            <img src="./../assets/img/findus.jpg" alt="findus" width="900" id="imagehover" height="400">
             <h2 class="findus">
                 Findus
             </h2>
-            <img src="./../assets/img/FAQS.jpg" alt="FAQS" width="900" height="400">
+            <img src="./../assets/img/FAQS.jpg" alt="FAQS" width="900" id="imagehover" height="400">
             <h2 class="faqs">
                 FAQs
             </h2>
 
         </div>
-        </div>
-        <div class="bottom">
-            <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
-            <p class="font"><strong>sign up to our news letter</strong></p>
-            <br>
-            <button class="button2"><a href="./../pages/register.html"> subscribe </a></button>
-            <footer style="margin-left: 450px;">
-                <br><br><br><br><br><br><br><br>
-                contact
-                us| aboutus| careers| terms and condition
-            </footer>
-        </div>
+    </div>
+    <div class="bottom">
+        <img src="./../assets/img/zoologo.png" alt="zoologo" width="170" height="170">
+        <p class="font"><strong>sign up to our news letter</strong></p>
+        <br>
+        <button class="button2"><a href="./../pages/register.html"> subscribe </a></button>
+        <footer style="margin-left: 450px;">
+            <br><br><br><br><br><br><br><br>
+            contact
+            us| aboutus| careers| terms and condition
+        </footer>
+    </div>
 </body>
 
 </html>

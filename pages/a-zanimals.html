@@ -13,19 +13,20 @@
 
         .a1 {
             position: static;
-            height: 150px;
+            height: 190px;
             border: 3px;
-            background-color: #5499C7;
+            background-color: #0C6394   ;
             font-size: 50px;
             color: white;
         }
 
         .a2 {
-            height: 80px;
+            height: 100px;
             /* border: 3px; */
             background-color: #e7098b;
             font-size: 50px;
             color: white;
+   
         }
 
         nav {
@@ -35,14 +36,36 @@
             font-family: cursive;
             border-spacing: 20px;
             text-align: center;
-
+            margin-bottom: 20px;
         }
 
-        .a1 img {
+        .logo{
             margin-top: 40px;
             margin-left: 240px;
+            /* position: absolute; */
         }
-
+        .cart{
+            width:3%;
+             height:6vh;
+           padding-left: 860px;
+           margin-bottom: 30px;
+        }
+        .cart1{
+            width:3%;
+             height:6vh;
+           padding-left: 12px;
+           margin-bottom: 30px;
+        }
+        .cart2{
+            width:5%;
+             height:8vh;
+           padding-left: 10px;
+           margin-bottom: 30px;
+        }
+        header{
+            margin-left: 1300px;
+            font-size: 20px;
+        }
         .a3 {
             height: 80px;
             background-color: #0fb158;
@@ -200,7 +223,13 @@
 
 <body>
     <div class="a1">
-        <img src="./../assets/img/zoologo.png" alt="image missing" width="150" height="100">
+        <header>
+            About us| Contact us| Media| Findus
+        </header>
+        <img src="./../assets/img/zoologo.png" class="logo" alt="image missing" width="180" height="100">
+        <img src="./../assets/img/cart.png" class="cart" alt="cart">
+        <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
+        <img src="./../assets/img/wildplanettrust-logo.png" class="cart2" alt="cart">
     </div>
     <div class="a2">
 
@@ -251,7 +280,7 @@
 
     </div>
 
-    <img src="./../assets/img/explorezoo.jpg" alt="image missing" width="1818" height="570">
+    <img src="./../assets/img/explorezoo.jpg" alt="image missing" width="1818" height="600">
 
     <div class="a3">
         <strong>A-Z of Animals</strong>
@@ -307,9 +336,7 @@
                 Here you can learn more about your favourite mammals, birds, reptiles, amphibians and plants.
             </h3>
             <div class="buttonholder">
-                <div class="prev">
-                    <button class="prevbutton" id="previous"><a href="#">&#62; </a></button>
-                </div>
+                
                 <div class="buttonlist" id="buttonli">
                     <button class="buttona"><a href="?filterBy=a" onclick="button('a')">A</a></button>
 
@@ -337,13 +364,13 @@
 
                     <button class="buttona"><a href="?filterBy=m">M</a></button>
 
-                    <button class="buttona"><a href="?filterBy=n">N</a></button>
+                    <button class="buttona"><a href="?filterBy=n">N</a></button><br>
 
                     <button class="buttona"><a href="?filterBy=o">O</a></button>
 
                     <button class="buttona"><a href="?filterBy=p">P</a></button>
 
-                    <button class="buttona"><a href="?filterBy=q">Q</a></button>
+                    <button class="buttona" id="buttonq"><a href="?filterBy=q">Q</a></button>
 
                     <button class="buttona"><a href="?filterBy=r">R</a></button>
 
@@ -363,10 +390,6 @@
 
                     <button class="buttona"><a href="?filterBy=z">Z</a></button>
 
-                </div>
-
-                <div class="next">
-                    <button class="nextbutton" id="next" onclick="next()"><a href="#">&#60;</a></button>
                 </div>
             </div>
         </div>
@@ -416,7 +439,7 @@
                 listedAnimal = listedAnimal + animalsHTML;
             }
 
-
+        
             document.getElementById("animalurl").innerHTML = listedAnimal;
 
 

@@ -9,13 +9,43 @@
     <style>
         .a1 {
             position: static;
-            /* margin-left: 100px; */
-            /* width:1800px; */
-            height: 150px;
+            height: 190px;
             border: 3px;
-            background-color: #5499C7;
+            background-color: #0C6394;
             font-size: 50px;
             color: white;
+        }
+
+        .logo {
+            margin-top: 40px;
+            margin-left: 240px;
+            /* position: absolute; */
+        }
+
+        .cart {
+            width: 3%;
+            height: 6vh;
+            padding-left: 860px;
+            margin-bottom: 30px;
+        }
+
+        .cart1 {
+            width: 3%;
+            height: 6vh;
+            padding-left: 12px;
+            margin-bottom: 30px;
+        }
+
+        .cart2 {
+            width: 5%;
+            height: 8vh;
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+
+        header {
+            margin-left: 1300px;
+            font-size: 20px;
         }
 
         .a2 {
@@ -33,16 +63,17 @@
             font-family: cursive;
             border-spacing: 20px;
             margin-left: 10px;
-        }
-
-        .a1 img {
-            margin-top: 40px;
-            margin-left: 240px;
+            text-align: center;
         }
 
         .a3 {
             height: 80px;
             background-color: #0fb158;
+            margin-top: -55px;
+        }
+
+        .a3 p {
+            margin-left: 400px;
             font-size: 50px;
             font-style: italic;
             font-weight: bold;
@@ -50,19 +81,34 @@
         }
 
         .a4 {
-            background-color: #5499C7;
+            background-color: #0C6394;
             font-size: 20px;
             font-style: oblique;
             color: white;
             margin-left: 300px;
-            width: 300px;
-            height: 700px;
+            width: 400px;
+            height: 720px;
             border-radius: 25px;
             position: relative;
         }
 
         .a4 h1 {
             margin-left: 30px;
+        }
+
+        #search {
+            width: 300px;
+            height: 45px;
+            border: solid 4px #5499C7;
+            display: block;
+            margin-left: 30px;
+            text-decoration: none;
+        }
+
+        .a4 img {
+            margin-left: 40px;
+            position: absolute;
+            padding-top: 5px;
         }
 
         h1 {
@@ -73,14 +119,19 @@
         }
 
         h2 {
-            font-size: 30px;
-            color: #5499C7;
+            font-size: 40px;
+            color: #0C6394;
             font-weight: bold;
+            text-align: center;
         }
 
         p {
-            font-size: 20px;
-
+            font-size: 23px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            color: #0C6394;
+            ;
         }
 
         .bottom {
@@ -112,7 +163,7 @@
         .image {
             margin-left: 800px;
             /* position: relative; */
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         .sub {
@@ -148,136 +199,140 @@
         background-size: 100% 100%;
     }
 </style>
+
 <body>
     <div class="a1">
-        <img src="./../assets/img/zoologo.png" alt="image missing" width="150" height="150">
+        <header>
+            About us| Contact us| Media| Findus
+        </header>
+        <img src="./../assets/img/zoologo.png" class="logo" alt="image missing" width="180" height="100">
+        <img src="./../assets/img/cart.png" class="cart" alt="cart">
+        <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
+        <img src="./../assets/img/wildplanettrust-logo.png" class="cart2" alt="cart">
     </div>
     <div class="a2">
-       
-            <nav>
-                &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
-                &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
-            </nav>
-       
+
+        <nav>
+            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
+            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+        </nav>
+
     </div>
     <img src="./../assets/img/newzoo5.jpg" alt="image missing" width="1818" height="570">
     <div class="a3">
-        &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; share: <img src="./../assets/img/facebook-removebg-preview.png" alt="image missing" width="50"
-            height="50">&nbsp;&nbsp;
-        <img src="./../assets/img/twitter-removebg-preview.png" alt="image missing" width="50" height="50"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; zoo updates
+        <p>zoo updates</p>
         <div class="image">
             <img src="./../assets/img/newzoo4.jpeg" alt="image missing" width="600" height="600">
         </div>
     </div>
-    
+
     <div class="a4">
-        
-                <h1><strong>visit</strong></h1>
-                <h1>Zoo updates</h1>
-                <h1>prices</h1>
-                <h1> - annual pass</h1>
-                <h1> - free zoo visits</h1>
-                <h1> - online purchase terms &conditions</h1>
-                <h1> - discounts</h1>
-                <h1>opening times</h1>
-                <h1>group visits</h1>
-                <h1>find us</h1>
-                <h1>food&drink</h1>
-                <h1>zoo app</h1>
-                <h1>FAQs</h1>
-                <h1>terms of entry</h1>
-            
+
+        <h1><strong>visit</strong></h1>
+        <h1>Zoo updates</h1>
+        <h1>prices</h1>
+        <h1> - annual pass</h1>
+        <h1> - free zoo visits</h1>
+        <h1> - online purchase terms &conditions</h1>
+        <h1> - discounts</h1>
+        <h1>opening times</h1>
+        <h1>group visits</h1>
+        <h1>find us</h1>
+        <h1>food&drink</h1>
+        <h1>zoo app</h1>
+        <h1>FAQs</h1>
+        <h1>terms of entry</h1>
+        <img src="./../assets/img/search icon.png" width="30" height="30">
+        <input type="search" id="search" onchange="searchbar()">
+
     </div>
-    
-        <h2>
 
-            Being a large visitor
-            attraction, there is
-            always lots going on at
-            paignton zoo!
-        </h2>
-        <p>
-            Here is where we let you know about all of the latest updates prior to your visit, including any exhibit
-            closures, weather updates, animals off-show or planned maintenance work.
+    <h2>
 
-            We always aim to offer the best possible experience for our guests and thank you for your understanding.
-        </p>
-        <hr>
-        <h2>
-            BOARDWALK CLOSURE
-        </h2>
-        <p>
-            Our boardwalk is being redeveloped, so when you visit the zoo from now on your entry and exit route<br> will
-            be slightly different. Instead of going across the boardwalk you will be directed through Brookside
-            <br>Aviary and then follow the signposted path around into the zoo. When you exit the zoo follow the<br> big
-            cats route back to Brookside Aviary.
-            As you are probably aware, there is a nationwide <br>shortage of building materials, and we are working with
-            our contractors to start this project as soon<br> as possible.
-            We will keep this page updated on<br> how our boardwalk redevelopment is progressing.
-        </p>
-        <hr>
-        <h2>
-            PATH CLOSURE
-        </h2>
-        <p>
-            The path between the mandrills and rhinos will be closed throughout November to allow essential maintenance
-            to take place on the rhino wall. We apologise for any inconvenience that this may cause.
-        </p>
-        <hr>
-        <h2>TICKETING AND ENTRY</h2>
-        <p>
-            Pre-booking online is not essential, however, to ensure that you are able to visit Paignton Zoo on your
-            preferred date and time, we would suggest booking your tickets in advance. Annual Pass holders may check in
-            using Gate 5.
+        Being a large visitor
+        attraction, there is
+        always lots going on at
+        paignton zoo!
+    </h2>
+    <p>
+        Here is where we let you know about all of the latest updates prior to your visit, including any exhibit<br>
+        closures, weather updates, animals off-show or planned maintenance work.<br><br>
 
-            Face coverings and social distancing are no longer compulsory in indoor or outdoor areas. However, please do
-            respect guests and team members who still wish to adhere to these measures.
+        We always aim to offer the best possible experience for our guests and thank you for your understanding.
+    </p><br>
+    <h2>
+        BOARDWALK CLOSURE
+    </h2>
+    <p>
+        Our boardwalk is being redeveloped, so when you visit the zoo from now on your entry and exit route<br> will
+        be slightly different. Instead of going across the boardwalk you will be directed through Brookside
+        <br>Aviary and then follow the signposted path around into the zoo. When you exit the zoo follow the<br> big
+        cats route back to Brookside Aviary.
+        As you are probably aware, there is a nationwide <br>shortage of building materials, and we are working with
+        our contractors to start this project as soon<br> as possible.
+        We will keep this page updated on<br> how our boardwalk redevelopment is progressing.
+    </p><br>
 
-            If you have a complimentary ticket, existing pre-paid ticket, Childminder Pass or Welcome Return ticket,
-            please call 01803 697500 to book your time slot as we cannot process these bookings online.
+    <h2>
+        PATH CLOSURE
+    </h2>
+    <p>
+        The path between the mandrills and rhinos will be closed throughout November to allow essential maintenance<br>
+        to take place on the rhino wall. We apologise for any inconvenience that this may cause.
+    </p><br>
 
-            For more details, please see our Staying Safe at the Zoo guide here.
+    <h2>TICKETING AND ENTRY</h2>
+    <p>
+        Pre-booking online is not essential, however, to ensure that you are able to visit Paignton Zoo on your<br>
+        preferred date and time, we would suggest booking your tickets in advance. Annual Pass holders may check in<br>
+        using Gate 5.<br><br>
 
-            Please note: we cannot transfer any ticket or time slot bookings.
-        </p>
-        <hr>
-        <h2>
-            WHICH EXHIBITS ARE OPEN/CLOSED AND ANIMALS OFF SHOW
-        </h2>
-        <p>
-            All outdoor exhibits and the majority of our indoor exhibits are open. Our indoor soft play is now open.
-            Face coverings are no longer required in indoor spaces.
+        Face coverings and social distancing are no longer compulsory in indoor or outdoor areas. However, please do<br>
+        respect guests and team members who still wish to adhere to these measures.<br><br>
 
-            The following exhibits are currently closed due to maintenance: Giraffe House (outdoor viewing available),
-            Jungle Express Train and Nocturnal House.
+        If you have a complimentary ticket, existing pre-paid ticket, Childminder Pass or Welcome Return ticket,<br>
+        please call 01803 697500 to book your time slot as we cannot process these bookings online.<br><br>
 
-            There may be times when some of our animals may not be viewable at the exact time that you visit an exhibit
-            as we not do not ‘force’ them to be ‘on-show’. If an animal is not immediately visible, they could be
-            resting in their off-show area or somewhere out of view in their naturalistic exhibit, so please make time
-            to pop back later in the day – it will be worth the wait!
+        For more details, please see our Staying Safe at the Zoo guide here.<br><br>
 
-            For example, our big cats are usually more active and easier to spot in the afternoons. We cannot guarantee
-            that you will see every single animal of the day of your visit.
-        </p>
-        <hr>
-        <h2>FOOD & DRINK</h2>
-        <p>
-            We are serving a full food and drink menu every day at Paignton Zoo.
-            The Island Restaurant is open daily from 10am until half an hour before the zoo closes and other catering
-            cabins around the site are also open (serving times do vary).
-            Vegan, vegetarian and gluten-free options are available in all of our food outlets, with plenty of outdoor
-            seating and picnic areas for guests to use.
-        </p>
-        <p>
-            If you have a query that is not answered here, please email us at paigntonzoo@wildplanettrust.org.uk and we
-            will aim to get back to you as quickly as possible.
-            And to further keep up-to-date with everything Paignton Zoo related, please make sure you follow our social
-            media channels too!
-        </p>
+        Please note: we cannot transfer any ticket or time slot bookings.<br>
+    </p><br>
 
-   
+    <h2>
+        WHICH EXHIBITS ARE OPEN/CLOSED AND ANIMALS OFF SHOW
+    </h2>
+    <p>
+        All outdoor exhibits and the majority of our indoor exhibits are open. Our indoor soft play is now open.<br>
+        Face coverings are no longer required in indoor spaces.<br><br>
+
+        The following exhibits are currently closed due to maintenance: Giraffe House (outdoor viewing available),<br>
+        Jungle Express Train and Nocturnal House.<br><br>
+
+        There may be times when some of our animals may not be viewable at the exact time that you visit an exhibit<br>
+        as we not do not ‘force’ them to be ‘on-show’. If an animal is not immediately visible, they could be<br>
+        resting in their off-show area or somewhere out of view in their naturalistic exhibit, so please make time<br>
+        to pop back later in the day – it will be worth the wait!<br><br>
+
+        For example, our big cats are usually more active and easier to spot in the afternoons. We cannot guarantee<br>
+        that you will see every single animal of the day of your visit.<br>
+    </p><br>
+
+    <h2>FOOD & DRINK</h2>
+    <p>
+        We are serving a full food and drink menu every day at Paignton Zoo.<br>
+        The Island Restaurant is open daily from 10am until half an hour before the zoo closes and other catering<br>
+        cabins around the site are also open (serving times do vary).<br>
+        Vegan, vegetarian and gluten-free options are available in all of our food outlets, with plenty of outdoor<br>
+        seating and picnic areas for guests to use.<br>
+    </p>
+    <p>
+        If you have a query that is not answered here, please email us at paigntonzoo@wildplanettrust.org.uk and we<br>
+        will aim to get back to you as quickly as possible.<br>
+        And to further keep up-to-date with everything Paignton Zoo related, please make sure you follow our social<br>
+        media channels too!
+    </p>
+
+
 
     <div class="bottom">
         <img src="./../assets/img/zoologo.png" alt="image missing" width="170" height="170">
