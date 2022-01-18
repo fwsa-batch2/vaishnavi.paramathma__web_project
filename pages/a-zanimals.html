@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/a-zanimals.css">
     <style>
         body {
             background: linear-gradient(to bottom);
@@ -142,49 +143,6 @@
         .animalwitha {
             margin-right: 20px;
             margin-bottom: 20px;
-        }
-        #visitSubnav {
-            width: 1818;
-            height: 200px;
-            background-color: #0fb158;
-            display: none;
-
-        }
-
-        #visitSubnav p {
-            margin-left: 450px;
-            font-size: 30px;
-            color: white;
-            padding-top: 20px;
-        }
-        #exploreSubnav {
-            width: 1818;
-            height: 200px;
-            background-color: #0fb158;
-            display: none;
-
-        }
-
-        #exploreSubnav p {
-            margin-left: 450px;
-            font-size: 30px;
-            color: white;
-
-        }
-
-        #eventSubnav {
-            width: 1818;
-            height: 200px;
-            background-color: #0fb158;
-            display: none;
-
-        }
-
-        #eventSubnav p {
-            margin-left: 450px;
-            font-size: 30px;
-            color: white;
-            padding-top: 20px;
         }
 
         #animalurl {
@@ -401,86 +359,9 @@
             </div>
         </div>
 
-
     </div>
-
-
-
-    <script>
-
-        let filterAlphabet = "a";
-
-        function filteredAnimals() {
-
-            const animalList = JSON.parse(localStorage.getItem('animaldetails'));
-
-            let storage = animalList.filter(filterByAlp)
-            const len = storage.length
-
-            let listedAnimal = ""
-            for (let i = 0; i < len; i++) {
-                let index = storage[i];
-
-
-                // const animalurl = "<div class='card'> <img src=" + index.iUrl + " class=\"imagestyle\"></img>"
-                // const animalsname = "<h1  class=\"images\" >" + index.nameOfAnimal + "</h1> </div>"
-                // listedAnimal = listedAnimal + animalurl + animalsname;
-
-
-                const animalsHTML = `
-                <div class="card">
-                    <img src="${index.iUrl}"> </img>
-                    <h1> ${index.nameOfAnimal} </h1>
-                    <p> ${index.aboutA} </p>
-                </div>
-                `   
-                listedAnimal = listedAnimal + animalsHTML;
-            }
-
-        
-            document.getElementById("animalurl").innerHTML = listedAnimal;
-
-
-        }
-
-        function getfilterbyfromurl() {
-            const currentURL = window.location.search;
-            const urlparams = new URLSearchParams(currentURL);
-
-            const paramfilter = urlparams.get("filterBy")
-            console.log(paramfilter);
-            filterAlphabet = paramfilter;
-
-        }
-
-        getfilterbyfromurl();
-        filteredAnimals();
-
-
-        function filterByAlp(animalDetails) {
-            return animalDetails.nameOfAnimal.startsWith(filterAlphabet)
-        }
-
-
-        function dropdown() {
-            document.getElementById("visitSubnav").style.display = "block";
-            document.getElementById("exploreSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.display = "none";
-            document.getElementById("visitSubnav").style.marginTop = "-30px"
-        }
-        function dropdown1() {
-            document.getElementById("exploreSubnav").style.display = "block";
-            document.getElementById("visitSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.display = "none";
-            document.getElementById("exploreSubnav").style.marginTop = "-30px"
-        }
-        function dropdown2() {
-            document.getElementById("eventSubnav").style.display = "block";
-            document.getElementById("visitSubnav").style.display = "none";
-            document.getElementById("exploreSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.marginTop = "-30px"
-        } 
-    </script>
+    <script src="./../assets/js/a-zanimals.js"> </script>
+    <script src="./../assets/js/dropdown.js"> </script>
 </body>
 
 </html>

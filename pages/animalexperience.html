@@ -5,21 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animalexperince</title>
+    <link rel="stylesheet" href="./../assets/css/a-zanimals.css">
     <style>
         .a1 {
-            /* position: relative; */
-            height: 150px;
-            width: 100%;
+            position: static;
+            height: 190px;
             border: 3px;
-            background-color: #5499C7;
-            font-size: 50px;
-            color: white;
-        }
-
-        .a2 {
-            height: 80px;
-            /* border: 3px; */
-            background-color: #e7098b;
+            background-color: #044068;
             font-size: 50px;
             color: white;
         }
@@ -33,33 +25,46 @@
             margin-left: 10px;
             text-align: center;
         }
-        .logo{
+
+        .logo {
             margin-top: 40px;
             margin-left: 240px;
-            /* position: absolute; */
+
         }
-        .cart{
-            width:3%;
-             height:6vh;
-           padding-left: 780px;
-           margin-bottom: 30px;
+
+        .cart {
+            width: 3%;
+            height: 6vh;
+            padding-left: 860px;
+            margin-bottom: 30px;
         }
-        .cart1{
-            width:3%;
-             height:6vh;
-           padding-left: 10px;
-           margin-bottom: 30px;
+
+        .cart1 {
+            width: 3%;
+            height: 6vh;
+            padding-left: 12px;
+            margin-bottom: 30px;
         }
-        .cart2{
-            width:5%;
-             height:8vh;
-           padding-left: 10px;
-           margin-bottom: 30px;
+
+        .cart2 {
+            width: 5%;
+            height: 8vh;
+            padding-left: 10px;
+            margin-bottom: 30px;
         }
-        header{
-            margin-left: 1150px;
+
+        header {
+            margin-left: 1300px;
             font-size: 20px;
         }
+        .a2 {
+            height: 80px;
+            /* border: 3px; */
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
         .a3 {
             height: 80px;
             background-color: #0fb158;
@@ -231,6 +236,40 @@
         </nav>
     
 </div>
+<div id="visitSubnav">
+    <div id="visitsubnavsub">
+        <strong>
+            <p> zoo update</p>
+            <p> Opening time</p>
+            <p> food & drink</p>
+            <p>zoo app</p>
+            <p>Zoo Map</p>
+            <p>prices</p>
+        </strong>
+    </div>
+</div>
+<div id="exploreSubnav">
+    <strong>
+        <p>Our Animals & Plants</p>
+        <p> A-Z of Animals</p>
+        <p> Attractions</p>
+        <p> Gardens</p>
+        <p> Zoo Map</p>
+        <p> Webcams</p>
+        <p> Keeper Talk Videos</p>
+
+    </strong>
+
+</div>
+<div id="eventSubnav">
+    <strong>
+        <p>talk times</p>
+        <p> events</p>
+        <p> competetions</p>
+        <p> childrens club</p>
+
+    </strong>
+</div>
 <img src="./../assets/img/rhinoceros.jpg" alt="image missing" width="1818" height="570">
 <div class="a3">
     adopt an animal
@@ -324,25 +363,7 @@
         us| aboutus| careers| terms and condition
     </footer>
 </div>
-<script>
-      function dropdown() {
-            document.getElementById("visitSubnav").style.display = "block";
-            document.getElementById("exploreSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.display = "none";
-            document.getElementById("visitSubnav").style.marginTop = "-30px"
-        }
-        function dropdown1() {
-            document.getElementById("exploreSubnav").style.display = "block";
-            document.getElementById("visitSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.display = "none";
-            document.getElementById("exploreSubnav").style.marginTop = "-30px"
-        }
-        function dropdown2() {
-            document.getElementById("eventSubnav").style.display = "block";
-            document.getElementById("visitSubnav").style.display = "none";
-            document.getElementById("exploreSubnav").style.display = "none";
-            document.getElementById("eventSubnav").style.marginTop = "-30px"
-        } 
-</script>
+
+<script src="./../assets/js/dropdown.js"> </script>
 </body>
 </html>

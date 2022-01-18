@@ -1,0 +1,49 @@
+#visitSubnav {
+    width: 1818px;
+    height: 200px;
+    background-color: #0fb158;
+    display: none;
+}
+
+#visitSubnav p {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    display: inline-flex;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+#exploreSubnav {
+    width: 1818;
+    height: 200px;
+    background-color: #0fb158;
+    display: none;
+
+}
+
+#exploreSubnav p {
+    margin-left: 450px;
+    font-size: 30px;
+    color: white;
+    display: inline-flex;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+#eventSubnav {
+    width: 1818;
+    height: 200px;
+    background-color: #0fb158;
+    display: none;
+
+}
+
+#eventSubnav p {
+    margin-left: 450px;
+    font-size: 30px;
+    color: white;
+    display: inline-flex;
+    margin-left: 240px;
+    margin-top: 20px;
+}
