@@ -9,16 +9,9 @@
     <style>
         .a1 {
             position: static;
-            height: 150px;
+            height: 190px;
             border: 3px;
-            background-color: #5499C7;
-            font-size: 50px;
-            color: white;
-        }
-
-        .a2 {
-            height: 80px;
-            background-color: #e7098b;
+            background-color: #0C6394;
             font-size: 50px;
             color: white;
         }
@@ -29,40 +22,80 @@
             font-weight: bolder;
             font-family: cursive;
             border-spacing: 20px;
-            margin-left: 10px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
-        .a1 img {
+        .logo {
             margin-top: 40px;
             margin-left: 240px;
+            /* position: absolute; */
         }
-        .extradetails{
+
+        .cart {
+            width: 3%;
+            height: 6vh;
+            padding-left: 860px;
+            margin-bottom: 30px;
+        }
+
+        .cart1 {
+            width: 3%;
+            height: 6vh;
+            padding-left: 12px;
+            margin-bottom: 30px;
+        }
+
+        .cart2 {
+            width: 5%;
+            height: 8vh;
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+
+        header {
+            margin-left: 1300px;
+            font-size: 20px;
+        }
+
+        .a2 {
+            height: 80px;
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
+
+        .extradetails {
             width: 400px;
             height: 950px;
-            background-color:#1f3451;
+            background-color: #1f3451;
             font-size: 16px;
             color: white;
             margin-left: 230px;
             position: absolute;
 
         }
-        .extradetails h2{
+
+        .extradetails h2 {
             margin-left: 5px;
         }
-        .maindetails{
+
+        .maindetails {
             margin-left: 800px;
         }
-        .juniorkeeper{
+
+        .juniorkeeper {
             width: 600px;
             height: 600px;
         }
-        
-        .smalldiv1{
+
+        .smalldiv1 {
             width: 700px;
             height: 700px;
 
         }
+
         #img-div {
             width: 500px;
             height: 700px;
@@ -74,7 +107,7 @@
         #addpic {
             width: 600px;
             height: 600px;
-       
+
         }
 
         #adoptbt {
@@ -92,21 +125,73 @@
         #adoptbt:hover {
             opacity: 0.7;
         }
-        h3{
+
+        h3 {
             font-size: 30px;
             color: black;
             text-align: center;
         }
-        #selectbt{
+
+        #selectbt {
             border: none;
             outline: 0;
             padding: 12px;
             color: white;
-            background-color:#e7098b ;
+            background-color: #e7098b;
             text-align: center;
             cursor: pointer;
             width: 500px;
             font-size: 18px;
+        }
+
+        #visitSubnav {
+            width: 1818px;
+            height: 200px;
+            background-color: #0fb158;
+            display: none;
+        }
+
+        #visitSubnav p {
+            padding: 10px;
+            font-size: 30px;
+            color: white;
+            display: inline-flex;
+           flex-wrap: wrap;
+           margin-left: 240px;
+           margin-top: 20px;
+        }
+
+        #exploreSubnav {
+            width: 1818;
+            height: 200px;
+            background-color: #0fb158;
+            display: none;
+
+        }
+
+        #exploreSubnav p {
+            margin-left: 450px;
+            font-size: 30px;
+            color: white;
+            display: inline-flex;
+           flex-wrap: wrap;
+           margin-left: 240px;
+           margin-top: 20px;
+        }
+
+        #eventSubnav {
+            width: 1818;
+            height: 200px;
+            background-color: #0fb158;
+            display: none;
+
+        }
+
+        #eventSubnav p {
+            margin-left: 450px;
+            font-size: 30px;
+            color: white;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -121,9 +206,48 @@
     <div class="a2">
 
         <nav>
-            &nbsp; visit&nbsp;&nbsp; &nbsp; explore&nbsp; &nbsp; wild events&nbsp; &nbsp; wild conservation&nbsp;
-            &nbsp; wild learing&nbsp; &nbsp; support us&nbsp; &nbsp; wild news
+            &nbsp; <span onmouseover="dropdown()">visit</span>&nbsp; &nbsp; <span
+                onmouseover="dropdown1()">explore</span>&nbsp; &nbsp;
+            <span onmouseover="dropdown2()">wild events</span>&nbsp; &nbsp; <span>wild conservation</span>&nbsp;
+            &nbsp; <span>wild learing</span>&nbsp; &nbsp; <span>support us</span>&nbsp; &nbsp;
+            <span>wild news</span>
         </nav>
+
+    </div>
+    <div id="visitSubnav">
+        <div id="visitsubnavsub">
+            <strong>
+                <p> zoo update</p>
+                <p> Opening time</p>
+                <p> food & drink</p>
+                <p>zoo app</p>
+                <p>Zoo Map</p>
+                <p>prices</p>
+            </strong>
+        </div>
+    </div>
+    <div id="exploreSubnav">
+        <strong>
+            <p>Our Animals & Plants&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                A-Z of Animals&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                Attractions&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br><br>
+                Gardens&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                Zoo Map&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                Webcams&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                <br><br> Keeper Talk Videos
+            </p>
+        </strong>
+
+    </div>
+    <div id="eventSubnav">
+        <strong>
+            <p>talk times&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                events&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                competetions&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br><br>
+                <br><br> childrens club
+            </p>
+        </strong>
 
     </div>
     <h2 style="text-align:center">Product Card</h2>
@@ -156,11 +280,11 @@
         <div class="maindetails">
             <div class="smalldiv1">
                 <h3>Junior Keeper Experience</h3>
-                <img src="./../assets/img/lion.jpg" alt="lion" class="juniorkeeper" >
-                  <button id="selectbt">adopt now</button> 
+                <img src="./../assets/img/lion.jpg" alt="lion" class="juniorkeeper">
+                <button id="selectbt">adopt now</button>
             </div>
 
-            </div>
+        </div>
 
     </div>
     <div id="addingimg">
@@ -186,6 +310,24 @@
         renderAnimal(getvalue);
         console.log(getvalue);
 
+        function dropdown() {
+            document.getElementById("visitSubnav").style.display = "block";
+            document.getElementById("exploreSubnav").style.display = "none";
+            document.getElementById("eventSubnav").style.display = "none";
+            document.getElementById("visitSubnav").style.marginTop = "-30px"
+        }
+        function dropdown1() {
+            document.getElementById("exploreSubnav").style.display = "block";
+            document.getElementById("visitSubnav").style.display = "none";
+            document.getElementById("eventSubnav").style.display = "none";
+            document.getElementById("exploreSubnav").style.marginTop = "-30px"
+        }
+        function dropdown2() {
+            document.getElementById("eventSubnav").style.display = "block";
+            document.getElementById("visitSubnav").style.display = "none";
+            document.getElementById("exploreSubnav").style.display = "none";
+            document.getElementById("eventSubnav").style.marginTop = "-30px"
+        } 
     </script>
 </body>
 
