@@ -160,7 +160,7 @@
 
         </h1>
         <hr>
-        <form onsubmit="submithandler()">
+        <form onsubmit="submithandler(event)">
             <input type="text" placeholder="animal name " id="animalname" required><br><br><br>
 
             <input type="text" placeholder="image url" title="This field accepts only Image Url" id="imageurl" required>
@@ -190,8 +190,8 @@
             }
 
         }
-        onpageload()
-        function submitHandler() {
+       
+        function submithandler(event){
             event.preventDefault();
 
             let name = document.getElementById("animalname").value;
@@ -206,8 +206,9 @@
             list.push(obj);
             let changetostring = JSON.stringify(list);
             localStorage.setItem("value", changetostring);
+            window.location.href="./../pages/addcart.html"
         }
-
+        onpageload()
        
     </script>
     <script src="./../assets/js/dropdown.js"> </script>
