@@ -5,10 +5,13 @@ let AddAnimal = [];
             let adding;
             for (let i = 0; i < leng; i++) {
                 let obj = addItem[i];
-                let animal = `<div id ="img-div" >
+                             
+                let animal = `<div id="dddd">
+                <div id ="img-div" >
                     <h3>${obj.nanimal}</h3>
                     <img src=${obj.aurl} id="addpic" alt="imagemissing">
                     <p><button type="button" id="adoptbt"onclick="clickhandler()">adopt now</button></p>
+                    </div>
                     </div>`;
                 adding = adding + animal;
             }

@@ -8,8 +8,6 @@
     <title>addcart</title>
     <link rel="stylesheet" href="./../assets/css/a-zanimals.css">
     <style>
-       
-
         .a2 {
             height: 80px;
             background-color: #e7098b;
@@ -42,49 +40,35 @@
             height: 600px;
         }
 
-        .smalldiv1 {
-            width: 700px;
-            height: 700px;
-
+        #dddd {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            background-color: black;
         }
 
-        #img-div {
-            width: 400px;
-            height: 400px;
-            background-color: rgb(17, 179, 207);
-            margin-left: 800px;
-            /* padding-bottom: 30px; */
+        /* #addingimg {
+            position: relative;
+            top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+
+        } */
+
+        #img-div h3 {
+            text-align: left;
+            color: red;
+            word-wrap: break-word;
         }
 
-        #addpic {
+        #img-div img {
             display: block;
             width: 260px;
             height: 260px;
         }
 
-        #adoptbt {
-            border: none;
-            /* outline: 0; */
-            padding: 12px;
-            color: white;
-            background-color: #e7098b;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-            font-size: 18px;
-        }
-
-        #adoptbt:hover {
-            opacity: 0.7;
-        }
-
-        h3 {
-            font-size: 30px;
-            color: black;
-            text-align: center;
-        }
-
-        #selectbt {
+        .img-div #adoptbt {
             border: none;
             outline: 0;
             padding: 12px;
@@ -95,6 +79,37 @@
             width: 500px;
             font-size: 18px;
         }
+
+        #img-div {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(17, 179, 207);
+            margin-left: 800px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+
+        /* #animalurl .img-div{
+            display: block;
+            max-width: 250px;
+        }
+
+        #animalurl .img-div img{
+            display: block;
+            width: 260px;
+            height: 260px;
+        }
+
+        #animalurl .img-div h3{
+            text-align: left;
+            color: red;
+            word-wrap: break-word;
+        }
+        #animalurl .card p{
+            margin: 0 0 8px;
+        } */
 
     </style>
 </head>
@@ -182,24 +197,13 @@
             <h2>FAQs</h2>
 
         </div>
-        <!-- <div class="maindetails">
-            <div class="smalldiv1">
-                <h3>Junior Keeper Experience</h3>
-                <img src="./../assets/img/lion.jpg" alt="lion" class="juniorkeeper">
-                <button id="selectbt">adopt now</button>
-            </div>
-
-        </div> -->
 
     </div>
+
     <div id="addingimg">
-        <div id="animalurl">
 
-        </div>
-        <div id="animalsname">
-
-        </div>
     </div>
+
     <script src="./../assets/js/addcart.js"> </script>
     <script src="./../assets/js/dropdown.js"> </script>
 </body>
