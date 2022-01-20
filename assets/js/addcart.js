@@ -2,7 +2,7 @@ let AddAnimal = [];
 function renderAnimal(addItem) {
     let leng = addItem.length;
     console.log(leng);
-    let adding;
+    let adding=""
     for (let i = 0; i < leng; i++) {
         let obj = addItem[i];
 
