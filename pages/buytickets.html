@@ -15,17 +15,12 @@
             background-color: #e7098b;
             font-size: 50px;
             color: white;
-        }
-
-       
-
-
-        
+        } 
     </style>
 </head>
 
-<body class="light">
-    <div class="a1">
+<body>
+    <div class="firstdiv">
         <header>
             About us| Contact us| Media| Findus
         </header>
@@ -34,7 +29,7 @@
         <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
         <img src="./../assets/img/wildplanettrust-logo.png" class="cart2" alt="cart">
     </div>
-    <div class="a2">
+    <div class="seconddivs">
        
             <nav>
                 &nbsp; <span onmouseover="dropdown()">visit</span>&nbsp; &nbsp; <span
@@ -131,7 +126,7 @@
             function submitFunction(){
                 event.preventDefault();
                 let dates = document.getElementById("dob").value;
-
+                
                 console.log(dates);
                 document.getElementById('datePicker').value = new Date().toDateInputValue();
             }
