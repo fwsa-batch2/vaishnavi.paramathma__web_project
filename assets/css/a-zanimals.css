@@ -72,12 +72,16 @@ nav {
 }
 
 .cart {
+    
     width: 3%;
     height: 6vh;
     padding-left: 860px;
     margin-bottom: 30px;
+  
 }
-
+.decoration{
+    text-decoration: none;
+}
 .cart1 {
     width: 3%;
     height: 6vh;
@@ -94,5 +98,5 @@ nav {
 
 header {
     margin-left: 1300px;
-    font-size: 20px;
+    font-size: 25px;
 }

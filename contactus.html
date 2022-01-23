@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="./../assets/css/a-zanimals.css">
+    <style>
+        .seconddiv {
+            height: 80px;
+            background-color: #e7098b;
+            font-size: 50px;
+            color: white;
+        }
+
+        .rowitem {
+            height: 80px;
+            background-color: #0fb158;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .maincontainer {
+            background-color: #044068;
+            width: 600px;
+            height: 1000px;
+            margin-left: 250px;
+            margin-top: 100px;
+            position: absolute;
+        }
+
+        .maincontainer h1 {
+            font-size: 35px;
+            color: white;
+            margin-left: 150px;
+            padding-top: 50px;
+        }
+
+        #fname {
+            margin-top: 50px;
+            width: 420px;
+            height: 70px;
+            margin-left: 40px;
+            font-size: 20px;
+            color: #044068;
+        }
+
+        #mail {
+            margin-top: 50px;
+            width: 420px;
+            height: 70px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+        #number {
+            margin-top: 50px;
+            width: 420px;
+            height: 50px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+        #subject {
+            margin-top: 50px;
+            width: 420px;
+            height: 70px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+        #message {
+            margin-top: 50px;
+            width: 420px;
+            height: 200px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+
+        #button {
+            width: 200px;
+            height: 50px;
+            margin-left: 150px;
+            font-size: 20px;
+            background-color: #e7098b;
+            margin-top: 50px;
+        }
+
+        .sidecontainer {
+            margin-left: 950px;
+            margin-top: 90px;
+        }
+
+        .sidecontainer h1 {
+            font-size: 30px;
+            color: #044068;
+        }
+
+        .sidecontainer p {
+            font-size: 22px;
+            color: #044068;
+        }
+
+        .sidecontainer h2 {
+            font-size: 26px;
+            color: #044068;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstdiv">
+        <header>
+            About us | Contact us | Media | Findus
+        </header>
+        <img src="./../assets/img/zoologo.png" class="logo" alt="image missing" width="180" height="100">
+        <a href="https://shop.wildplanettrust.org.uk/" class="decoration"> <img src="./../assets/img/cart.png"
+                class="cart" alt="cart"> </a>
+        <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
+        <a href="https://www.wildplanettrust.org.uk/"> <img src="./../assets/img/wildplanettrust-logo.png" class="cart2"
+                alt="cart"></a>
+    </div>
+    <div class="seconddiv">
+
+        <nav>
+            &nbsp; <span onmouseover="dropdown()">visit</span>&nbsp; &nbsp; <span
+                onmouseover="dropdown1()">explore</span>&nbsp; &nbsp;
+            <span onmouseover="dropdown2()">wild events</span>&nbsp; &nbsp; <span>wild conservation</span>&nbsp;
+            &nbsp; <span>wild learing</span>&nbsp; &nbsp; <span>support us</span>&nbsp; &nbsp;
+            <span>wild news</span>
+        </nav>
+
+    </div>
+    <div id="visitSubnav">
+        <strong>
+            <p> zoo update</p>
+            <p> Opening time</p>
+            <p> food & drink</p>
+            <p>zoo app</p>
+            <p>Zoo Map</p>
+            <p>prices</p>
+        </strong>
+    </div>
+    <div id="exploreSubnav">
+        <strong>
+            <p>Our Animals & Plants</p>
+            <p> A-Z of Animals</p>
+            <p> Attractions</p>
+            <p> Gardens</p>
+            <p> Zoo Map</p>
+            <p> Webcams</p>
+            <p> Keeper Talk Videos</p>
+        </strong>
+    </div>
+
+    <div id="eventSubnav">
+        <strong>
+            <p>talk times</p>
+            <p> events</p>
+            <p> competetions</p>
+            <p> childrens club</p>
+        </strong>
+    </div>
+    <img src="../assets/img/newzoocontact.jpg" alt="image missing" width="100%" height="570">
+    <div class="rowitem">
+        <strong>Contact Us</strong>
+    </div>
+    <div class="maincontainer">
+        <strong>
+            <h1>Submit an Enquiry</h1>
+        </strong>
+        <form onsubmit="submithandler(event)">
+            <input type="name " placeholder="First name " id="fname" autofocus>
+
+            <input type="email" placeholder="email address" id="mail" >
+
+            <input type="number" placeholder="contact number" id="number" >
+
+            <input type="text" placeholder="subject"  id="subject">
+
+            <textarea placeholder="message" id="message"></textarea>
+
+            <button type="submit" id="button"> submit
+            </button>
+        </form>
+    </div>
+    <div class="sidecontainer">
+        <h1>
+            Paignton Zoo
+        </h1>
+        <p>
+            Totnes Road, Paignton, Devon TQ4 7EU<br><br>
+
+            <strong>Telephone</strong>: 01803 697500<br><br>
+
+            <strong>Email</strong>: paigntonzoo@wildplanettrust.org.uk<br><br>
+        </p>
+        <h1>
+            Contact numbers
+        </h1>
+        <h2>
+            Membership, adoptions and experiences
+        </h2>
+        <p>
+            01803 697500
+        </p>
+        <h2>
+            Education
+        </h2>
+        <p>01803 697510</p>
+
+        <h2>Corporate support</h2>
+        <p>01803 697500</p>
+
+        <h2>Legacies and donations</h2>
+        <p>01803 697500</p>
+
+        <h2>Events</h2>
+        <p>01803 697500</p>
+
+        <h2>Volunteering</h2>
+        <p>01803 697511</p>
+    </div>
+    <script>
+        let array = []
+        function submithandler(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("fname").value;
+            let email = document.getElementById("mail").value;
+            let contactNumber = document.getElementById("number").value;
+            let question = document.getElementById("subject").value;
+            let textbox = document.getElementById("message").value;
+            console.log(question);
+
+            let obj = {
+                "username":name,
+                "useremail":email,
+                "usernumber":contactNumber,
+                "userquestion":question,
+                "usermessage":textbox,
+            }
+            array.push(obj);
+            let changetostring = JSON.stringify(array);
+            localStorage.setItem("contactdetails", changetostring)
+        }
+        submithandler();
+    </script>
+    <script src="./../assets/js/dropdown.js"> </script>
+
+</body>
+
+</html>
