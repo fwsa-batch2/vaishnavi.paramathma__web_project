@@ -68,7 +68,6 @@ nav {
 .logo {
     margin-top: 40px;
     margin-left: 240px;
-
 }
 
 .cart {
@@ -76,7 +75,7 @@ nav {
     width: 3%;
     height: 6vh;
     padding-left: 860px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   
 }
 .decoration{
@@ -86,14 +85,14 @@ nav {
     width: 3%;
     height: 6vh;
     padding-left: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .cart2 {
     width: 5%;
     height: 8vh;
     padding-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 header {
