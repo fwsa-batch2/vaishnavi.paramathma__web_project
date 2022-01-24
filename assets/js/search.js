@@ -9,7 +9,9 @@ function searchbar() {
     else if ("register" == searchItem) {
         window.open("/pages/register.html")
     }
-    
+    else if ("adopt animal" == searchItem){
+        window.open("/pages/register.html")
+    }
     else {
         alert("page not found")
     }
