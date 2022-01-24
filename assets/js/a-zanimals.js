@@ -11,11 +11,9 @@ function filteredAnimals() {
     for (let i = 0; i < len; i++) {
         let index = storage[i];
 
-
         // const animalurl = "<div class='card'> <img src=" + index.iUrl + " class=\"imagestyle\"></img>"
         // const animalsname = "<h1  class=\"images\" >" + index.nameOfAnimal + "</h1> </div>"
         // listedAnimal = listedAnimal + animalurl + animalsname;
-
 
         const animalsHTML = `
         <div class="card">
@@ -26,13 +24,9 @@ function filteredAnimals() {
         `   
         listedAnimal = listedAnimal + animalsHTML;
     }
-
-
     document.getElementById("animalurl").innerHTML = listedAnimal;
 
-
 }
-
 function getfilterbyfromurl() {
     const currentURL = window.location.search;
     const urlparams = new URLSearchParams(currentURL);
