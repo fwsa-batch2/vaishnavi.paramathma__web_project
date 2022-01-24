@@ -108,3 +108,10 @@ header {
    pointer-events: visible;
    z-index: 10;
 }
+.seconddiv {
+    height: 80px;
+    /* border: 3px; */
+    background-color: #e7098b;
+    font-size: 50px;
+    color: white;
+}
