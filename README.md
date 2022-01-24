@@ -1,6 +1,7 @@
 # paington zoo
 #### Sonarcloud Link for Paington Zoo:https://sonarcloud.io/project/overview?id=fwsa-batch-02_paingtonzooapp-ui<br>
-#### Netlify Link For Paington Zoo:https://paingtonzooapp-ui-vaishanviparamathma.netlify.app/<br>
+#### Netlify Link For Paington Zoo:https://paingtonzooapp-ui-vaishanviparamathma.netlify.app/<br>(not working)
+#### subdomain link:https://paingtonzoo.fwsa.in/
 
 
 #### FEATURES
@@ -41,4 +42,6 @@ Acceptance Criteria<br><br>
 Acceptance Criteria<br><br>
 1.user can filter the pages by name of the animal starting letter
  
-
+<strong>contact us</strong><br>
+acceptance criteria<br><br>
+1.user review will be stored in local storage and nothing will not be displayed to user

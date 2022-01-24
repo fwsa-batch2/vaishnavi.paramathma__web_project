@@ -15,13 +15,11 @@ function filteredAnimals() {
         // const animalsname = "<h1  class=\"images\" >" + index.nameOfAnimal + "</h1> </div>"
         // listedAnimal = listedAnimal + animalurl + animalsname;
 
-        const animalsHTML = `
-        <div class="card">
-            <img src="${index.iUrl}"> </img>
-            <h1> ${index.nameOfAnimal} </h1>
-            <p> ${index.aboutA} </p>
-        </div>
-        `   
+        const animalsHTML = `<div class="card">
+                     <img src="${index.iUrl}"> </img>
+                     <h1> ${index.nameOfAnimal} </h1>
+                     <p> ${index.aboutA} </p>
+                     </div>`   
         listedAnimal = listedAnimal + animalsHTML;
     }
     document.getElementById("animalurl").innerHTML = listedAnimal;
