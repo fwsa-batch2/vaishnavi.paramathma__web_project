@@ -1,0 +1,87 @@
+.maincontainer {
+    background-color: #044068;
+    width: 600px;
+    height: 1000px;
+    margin-left: 250px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.maincontainer h1 {
+    font-size: 35px;
+    color: white;
+    margin-left: 150px;
+    padding-top: 50px;
+}
+
+#fname {
+    margin-top: 50px;
+    width: 420px;
+    height: 70px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: #044068;
+}
+
+#mail {
+    margin-top: 50px;
+    width: 420px;
+    height: 70px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#number {
+    margin-top: 50px;
+    width: 420px;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#subject {
+    margin-top: 50px;
+    width: 420px;
+    height: 70px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#message {
+    margin-top: 50px;
+    width: 420px;
+    height: 200px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+
+#button {
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+    background-color: #e7098b;
+    margin-top: 50px;
+}
+
+.sidecontainer {
+    margin-left: 950px;
+    margin-top: 90px;
+}
+
+.sidecontainer h1 {
+    font-size: 30px;
+    color: #044068;
+}
+
+.sidecontainer p {
+    font-size: 22px;
+    color: #044068;
+}
+
+.sidecontainer h2 {
+    font-size: 26px;
+    color: #044068;
+    margin-top: 35px;
+}

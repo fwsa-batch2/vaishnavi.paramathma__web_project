@@ -6,107 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
-    <link rel="stylesheet" href="./../assets/css/a-zanimals.css">
-    <style>
-        
-        .rowitem {
-            height: 80px;
-            background-color: #0fb158;
-            font-size: 50px;
-            font-style: italic;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-        }
-
-        .maincontainer {
-            background-color: #044068;
-            width: 600px;
-            height: 1000px;
-            margin-left: 250px;
-            margin-top: 100px;
-            position: absolute;
-        }
-
-        .maincontainer h1 {
-            font-size: 35px;
-            color: white;
-            margin-left: 150px;
-            padding-top: 50px;
-        }
-
-        #fname {
-            margin-top: 50px;
-            width: 420px;
-            height: 70px;
-            margin-left: 40px;
-            font-size: 20px;
-            color: #044068;
-        }
-
-        #mail {
-            margin-top: 50px;
-            width: 420px;
-            height: 70px;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-
-        #number {
-            margin-top: 50px;
-            width: 420px;
-            height: 50px;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-
-        #subject {
-            margin-top: 50px;
-            width: 420px;
-            height: 70px;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-
-        #message {
-            margin-top: 50px;
-            width: 420px;
-            height: 200px;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-
-
-        #button {
-            width: 200px;
-            height: 50px;
-            margin-left: 150px;
-            font-size: 20px;
-            background-color: #e7098b;
-            margin-top: 50px;
-        }
-
-        .sidecontainer {
-            margin-left: 950px;
-            margin-top: 90px;
-        }
-
-        .sidecontainer h1 {
-            font-size: 30px;
-            color: #044068;
-        }
-
-        .sidecontainer p {
-            font-size: 22px;
-            color: #044068;
-        }
-
-        .sidecontainer h2 {
-            font-size: 26px;
-            color: #044068;
-            margin-top: 35px;
-        }
-    </style>
+    <link rel="stylesheet" href="./../assets/css/commonpage.css">
+    <link rel="stylesheet" href="./../assets/css/contactus.css">
 </head>
 
 <body>
@@ -163,7 +64,7 @@
         </strong>
     </div>
     <img src="../assets/img/newzoocontact.jpg" alt="image missing" width="100%" height="570">
-    <div class="rowitem">
+    <div class="page_heading">
         <strong>Contact Us</strong>
     </div>
     <div class="maincontainer">
@@ -171,15 +72,15 @@
             <h1>Submit an Enquiry</h1>
         </strong>
         <form onsubmit="submithandler(event)">
-            <input type="name " placeholder="First name " id="fname" autofocus>
+            <input type="name " placeholder="First name " id="fname" autofocus required>
 
-            <input type="email" placeholder="email address" id="mail" >
+            <input type="email" placeholder="email address" id="mail" required>
 
-            <input type="number" placeholder="contact number" id="number" >
+            <input type="number" placeholder="contact number" id="number" required>
 
-            <input type="text" placeholder="subject"  id="subject">
+            <input type="text" placeholder="subject"  id="subject" required>
 
-            <textarea placeholder="message" id="message"></textarea>
+            <textarea placeholder="message" id="message" required></textarea>
 
             <button type="submit" id="button"> submit
             </button>
