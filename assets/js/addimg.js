@@ -20,4 +20,5 @@ let array = [];
             array.push(obj);
             let changetostring = JSON.stringify(array);
             localStorage.setItem("animaldetails", changetostring);
+            window.location.href = "./../pages/a-zanimals.html"
         }
