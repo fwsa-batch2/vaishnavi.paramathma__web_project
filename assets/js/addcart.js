@@ -1,4 +1,6 @@
-let AddAnimal = [];
+// let AddAnimal = [];
+let getvalue = JSON.parse(localStorage.getItem("value"));
+console.log(getvalue);
 function renderAnimal(addItem) {
     let leng = addItem.length;
     console.log(leng);
@@ -19,9 +21,8 @@ function renderAnimal(addItem) {
     }
     document.getElementById("addingimg").innerHTML = adding;
 }
-let getvalue = JSON.parse(localStorage.getItem("value"));
+
 renderAnimal(getvalue);
-console.log(getvalue);
 
 function clickhandler(){
     alert("Thanks for adopting the animal")
