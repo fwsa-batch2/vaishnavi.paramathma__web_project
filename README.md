@@ -1,5 +1,5 @@
 # paington zoo
-#### Sonarcloud Link for Paington Zoo:https://sonarcloud.io/project/overview?id=fwsa-batch-02_paingtonzooapp-ui<br>
+#### Sonarcloud Link for Paington Zoo:https://sonarcloud.io/project/overview?id=fwsa-batch2_vaishnavi.paramathma__web_project<br>
 #### Netlify Link For Paington Zoo:https://paingtonzooapp-ui-vaishanviparamathma.netlify.app/<br>(not working)
 #### subdomain link:https://paingtonzoo.fwsa.in/
 
@@ -13,11 +13,11 @@
 
 <strong>REGISTER</strong><br>
 1.all input fields are required<br>
-2.user name must contain 3 characters and must not bemempty<br>
- 3.email id entered must not eist in localstorage already<br>
+2.user name must contain 3 characters and must not be empty<br>
+ 3.email address id entered must not eist in localstorage already<br>
  4.field should have abc@gmail.com<br>
  5.must match the format required
- 6.if everything is validated redirect to login page
+
 <br><br>
 
 <strong>LOGIN</strong><br>
