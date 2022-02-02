@@ -1,4 +1,4 @@
-.a3 {
+.container {
     width: 700px;
     height: 600px;
     background-color: #5499C7;
@@ -6,7 +6,7 @@
     padding-top: 100px;
 }
 
-.a3 h1{
+.container h1{
     margin-left: 80px;
 }
 
@@ -19,7 +19,7 @@
     margin-top: 50px;
 }
 
-.a3 form input {
+.container form input {
     width: 500px;
     height: 40px;
     /* border-radius: 20px; */
@@ -54,7 +54,7 @@
     color: red;
 }
 
-.a3 button {
+.container button {
     margin-left: 80px;
     margin-bottom: 20px;
     font-size: 1.5rem;

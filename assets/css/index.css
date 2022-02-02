@@ -1,17 +1,17 @@
      
-        .a3 h1 {
+        .maindetails h1 {
             font-size: 30px;
             color: #044068;
             margin-left: 650px;
         }
 
-        .a3 p {
+        .maindetails p {
             margin-left: 500px;
             font-size: 20px;
             color: #044068;
         }
 
-        .a4 {
+        .tickets {
             width: 800px;
             height: 600px;
             background-color: #e7098b;
@@ -19,17 +19,17 @@
             display: flex;
         }
 
-        .a4 img {
+        .tickets img {
             margin-top: -35px;
         }
 
-        .a4 h2 {
+        .tickets h2 {
             margin-top: 200px;
             font-size: 80px;
             color: white;
         }
 
-        .a5 {
+        .updates {
             width: 1010px;
             height: 600px;
             background-color: #0fb158;
@@ -37,18 +37,18 @@
             display: flex;
         }
 
-        .a5 img {
+        .updates img {
             margin-left: 160px;
         }
 
-        .a5 h2 {
+        .updates h2 {
             margin-top: 200px;
             font-size: 80px;
             color: white;
             margin-left: 80px;
         }
 
-        .a6 {
+        .adopt {
             width: 800px;
             height: 700px;
             background-color: #5499C7;
@@ -56,17 +56,17 @@
             display: flex;
         }
 
-        .a6 img {
+        .adopt img {
             margin-left: 100px;
             margin-top: -100px;
         }
-        .a6 h2 {
+        .adopt h2 {
             margin-top: 200px;
             font-size: 80px;
             color: white;
             margin-left: 60px;
         }
-        .a7 {
+        .news {
             width: 1010px;
             height: 700px;
             background-color: #044068;
@@ -74,45 +74,45 @@
             display: flex;
         }
 
-        .a7 img {
+        .news img {
             margin-top: -100px;
             margin-left: 80px;
         }
-        .a7 h2 {
+        .news h2 {
             margin-top: 200px;
             font-size: 80px;
             color: white;
         }
 
-        .a8 {
+        .explore {
             background-color: #0fb158;
             width: 800px;
             height: 350px;
             position:absolute;
             display: flex;
         }
-        .a8 h2 {
+        .explore h2 {
             margin-top: 100px;
             font-size: 75px;
             color: white;
         }
-        .a8 img {
+        .explore img {
             margin-top: 20px;
         }
          
-        .a9 {
+        .media {
             background-color: #e7098b;
             width: 1010px;
             height: 350px;
             margin-left: 800px;
             display: flex;
         }
-        .a9 h2 {
+        .media h2 {
             margin-top: 50px;
             font-size: 75px;
             color: white;
         }
-        .a9 img {
+        .media img {
             margin-top: 100px;
            margin-left: 40px;
         }

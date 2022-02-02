@@ -1,4 +1,4 @@
-.a4 {
+.extradetails{
     background-color: #0C6394;
     font-size: 20px;
     font-style: oblique;
@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.a4 h1 {
+.extradetails h1 {
     margin-left: 30px;
 }
 
@@ -66,11 +66,6 @@ p {
 h6 {
     font-size: 40px;
     margin-left: 200px;
-}
-
-.a2 table {
-    margin-left: 50px;
-    border-spacing: 20px;
 }
 
 .image {

@@ -1,4 +1,4 @@
-let filterAlphabet = "a"; // initialziing default filter value as "a"
+let filterAlphabet  = "a"; // initialziing default filter value as "a"
 
 /**
  * This function  used search animals by name
@@ -23,14 +23,14 @@ function filteredAnimals() {
         // const animalsname = "<h1  class=\"images\" >" + index.nameOfAnimal + "</h1> </div>"
         // listedAnimal = listedAnimal + animalurl + animalsname;
 
-        const animalsHTML =  getAnimalSectionTemplate();  
+        const animalsHTML =  getAnimalSectionTemplate(index);  
         listedAnimal = listedAnimal + animalsHTML;
     }
     document.getElementById("animalurl").innerHTML = listedAnimal;
 
 }
 
-function getAnimalSectionTemplate(){
+function getAnimalSectionTemplate(index){
    return  `<div class="card">
                      <img src="${index.iUrl}"> </img>
                      <h1> ${index.nameOfAnimal} </h1>
