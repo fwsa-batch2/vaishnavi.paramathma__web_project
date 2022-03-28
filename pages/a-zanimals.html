@@ -19,8 +19,8 @@
         <a href="https://shop.wildplanettrust.org.uk/" class="decoration"> <img src="./../assets/img/cart.png"
                 class="cart" alt="cart"> </a>
         <img src="./../assets/img/ticket.png" class="cart1" alt="cart">
-        <a href="https://www.wildplanettrust.org.uk/" class="decoration"> <img src="./../assets/img/wildplanettrust-logo.png" class="cart2"
-                alt="cart"></a>
+        <a href="https://www.wildplanettrust.org.uk/" class="decoration"> <img
+                src="./../assets/img/wildplanettrust-logo.png" class="cart2" alt="cart"></a>
     </div>
     <div class="seconddiv">
 
@@ -74,12 +74,14 @@
         <strong>A-Z of Animals</strong>
     </div>
     <div class="container">
-        <div class="extradetails">
+        <!-- <div class="extradetails">
             <h1>gifts and experience</h1>
-            <h2>adopt an animal</h2>  
+            <h2>adopt an animal</h2>
             <h2>animal experince</h2>
             <h2>membership</h2>
-           <a href="./../pages/addimg.html"> <h2>add animals</h2></a>
+            <a href="./../pages/addimg.html">
+                <h2>add animals</h2>
+            </a>
 
             <h1>animal experince</h1>
             <h2>animal experince terms and conditions</h2>
@@ -91,8 +93,8 @@
 
             <h1>Adopt an animal</h1>
             <h2>Adopt a cheetah<h2>
-            <h2>Adopt a giant tortoise</h2>
-            <h2>Adopt a Giraffe</h2>
+                    <h2>Adopt a giant tortoise</h2>
+                    <h2>Adopt a Giraffe</h2>
                     <h2>Adopt a goat</h2>
                     <h2>Adopt a gorilla</h2>
                     <h2>Adopt a komodo dragon</h2>
@@ -105,7 +107,7 @@
                     <h2>Adopt a orang-utan</h2>
                     <h2>Adoption terms and conditions</h2>
                     <input type="search" id="search" onchange="searchbar()">
-        </div>
+        </div> -->
         <div class="sidebar">
             <h1>
                 Paignton Zoo is the home of dozens of different species!
@@ -118,7 +120,7 @@
                 Here you can learn more about your favourite mammals, birds, reptiles, amphibians and plants.
             </h3>
             <div class="buttonholder">
-                
+
                 <div class="buttonlist" id="buttonli">
                     <button class="buttona"><a href="?filterBy=a" onclick="button('a')">A</a></button>
 
@@ -175,16 +177,16 @@
                 </div>
                 <div>
 
-                    <form action="searchbar">
+                    <form>
 
-                        <input type="text" name="filterBy" id="filterBy" required>
-                        <button type="submit">Submit</button>
+                        <input type="text" name="filterBy" id="inp" required>
+                        <button type="button" onclick="filterFunc()">Submit</button>
                     </form>
                 </div>
-                <p>Paignton</p>
+
             </div>
         </div>
-        <div class="anim">
+        <div id="anim">
 
             <div id="animalurl">
 
@@ -192,6 +194,7 @@
             <div id="animalsname">
 
             </div>
+
         </div>
 
     </div>
